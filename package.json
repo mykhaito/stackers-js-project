@@ -1,11 +1,11 @@
 {
-  "name": "vanilla-app-template",
+  "name": "stackers-js-project",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/vanilla-app-template/",
+    "build": "vite build --base=/stackers-js-project/",
     "preview": "vite preview"
   },
   "devDependencies": {
@@ -14,9 +14,11 @@
     "postcss-sort-media-queries": "^5.2.0",
     "vite": "^5.4.6"
   },
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "MMA <nah_not_here@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "accordion-js": "^3.4.0",
+    "swiper": "^11.2.2",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }

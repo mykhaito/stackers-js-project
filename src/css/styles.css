@@ -4,6 +4,12 @@
   | default @import url()
   |============================
 */
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'accordion-js/dist/accordion.min.css';
+@import 'modern-normalize/modern-normalize.css';
+
 /* Common styles */
 @import url('./reset.css');
 @import url('./base.css');

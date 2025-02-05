@@ -4,8 +4,7 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 32px 16px;
 }
 
 /* Styles for Tablet devices */
@@ -13,17 +12,15 @@
   .container {
     max-width: 768px;
 
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 32px 32px 169px 32px;
   }
 }
 
 /* Styles for Desktop devices */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1440px) {
   .container {
-    max-width: 1280px;
+    max-width: 1440px;
 
-    padding-left: 100px;
-    padding-right: 100px;
+    padding: 32px 32px 169px 32px;
   }
 }

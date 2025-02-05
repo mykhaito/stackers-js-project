@@ -1,15 +1,28 @@
+:root {
+  --background-color: #1C1D20;
+  --cards-color: #242527;
+  --arrow-color: #3B3B3B;
+  --button-text-color: #ED3B44;
+  --main-text-color: #FAFAFA;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: 'Inter Tight', sans-serif;
 
-  color: #141414;
-  background-color: #fbfbfb;
+  color: var(--main-text-color);
+  background-color: var(--background-color);
 
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .visually-hidden {
@@ -27,43 +40,25 @@ body {
 }
 
 .section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  margin-bottom: 64px;
 }
 
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+@media only screen and (min-width: 768px) {
+  .section:first-child {
+    margin-bottom: 64px;
+  }
+  
+  .section:not(:first-child) {
+    margin-bottom: 96px;
   }
 }
 
-.second-main-color {
-  color: #fbfbfb;
-}
-
-.accent-color {
-  color: #576f35;
-}
-
-.second-accent-color {
-  color: #7a3145;
-}
-
-.accent-bg-color {
-  background-color: #576f35;
-}
-
-.second-accent-bg-color {
-  background-color: #7a3145;
-}
-
-.icon-burger-btn,
-.icon-close {
-  stroke: #fbfbfb;
-}
-
-.icon-desktop-tablet-logo,
-.icon-mobile-logo {
-  fill: #fbfbfb;
+@media only screen and (min-width: 1440px) {
+  .section:first-child {
+    margin-bottom: 96px;
+  }
+  
+  .section:not(:first-child) {
+    margin-bottom: 164px;
+  }
 }

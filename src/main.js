@@ -1,3 +1,7 @@
+import 'modern-normalize';
+import 'accordion-js/dist/accordion.min.css';
+import 'swiper/swiper-bundle.min.css';
+
 import './js/header.js';
 import './js/menu.js';
 import './js/hero.js';

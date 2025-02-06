@@ -10,7 +10,7 @@
   background-position: center;
   max-width: 375px;
   max-height: 508px;
-  height: 100vw;
+  /* height: 100vw;*/
   margin-left: auto;
   margin-right: auto;
   /* Падінги між секціями не додаю, якщо потрібно буде - для mobile 32px tablet 48px desktop 82px */

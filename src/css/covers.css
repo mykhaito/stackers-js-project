@@ -9,28 +9,14 @@
   background-repeat: no-repeat;
   background-position: center;
   max-width: 375px;
-  height: 508px;
-  /* max-width: 1440px;
-  height: 960px; */
+  max-height: 508px;
+  height: 100vw;
   margin-left: auto;
   margin-right: auto;
+  /* Падінги між секціями не додаю, якщо потрібно буде - для mobile 32px tablet 48px desktop 82px */
   /* padding-top: 82px;
   padding-bottom: 82px; */
-  position: relative; /* Це забезпечує правильне позиціонування дочірніх елементів */
-  overflow: hidden; /* Обмежує вихід за межі секції */
-}
-
-/* Приховуємо заголовок */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  position: relative;
   overflow: hidden;
 }
 
@@ -44,18 +30,15 @@ body {
 *::after {
   box-sizing: border-box;
 }
-.content {
-  position: relative;
-}
 
 .marquee {
-  position: relative; /*Змінено з absolute */
+  position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Прибирає вихід зображень за межі */
+  overflow: hidden;
   display: flex;
-  flex-direction: column; /* Розміщує списки вертикально */
-  gap: 40px; /* Додає зазор у 40px між списками */
+  flex-direction: column;
+  gap: 40px;
 }
 
 .marquee-list {
@@ -64,20 +47,15 @@ body {
   justify-content: flex-start;
   margin: 0;
   padding: 0;
-  /* height: 314px;  */
-  /* overflow: hidden; */
-  gap: 40px; /* Додає зазор у 40px між елементами */
+  gap: 40px;
 }
 
 .marquee-item {
   flex-shrink: 0;
-  width: 282px; /* Фіксована ширина карток */
+  width: 282px;
   height: 162px;
-  /* width: 544px; 
-  height: 314px; */
-  overflow: hidden; /* Приховує зайві частини зображення */
-  position: relative; /* Забезпечує правильне позиціонування для зображення */
-  /* margin-right: 10px; */
+  overflow: hidden;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,8 +65,8 @@ body {
 .marquee-item img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Обрізає зображення, щоб заповнити контейнер, зберігаючи пропорції */
-  object-position: center; /* Центрує зображення в межах контейнера */
+  object-fit: cover;
+  object-position: center;
 }
 
 @keyframes marqueeLine {
@@ -96,7 +74,7 @@ body {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-150%); /* Рух на 150% ширини екрана */
+    transform: translateX(-150%);
   }
 }
 
@@ -110,11 +88,12 @@ body {
 @media screen and (min-width: 768px) {
   .covers-section {
     max-width: 768px;
-    height: 960px;
+    height: auto;
+    max-height: 960px;
   }
 
   .marquee-item {
-    width: 544px; /* Фіксована ширина карток */
+    width: 544px;
     height: 314px;
   }
 }
@@ -125,7 +104,6 @@ body {
 @media screen and (min-width: 1440px) {
   .covers-section {
     max-width: 1440px;
-    /* height: 960px; */
   }
 }
 /* --/COVERS DESKTOP-- */

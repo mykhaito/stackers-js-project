@@ -1,0 +1,131 @@
+/* <!-- COVERS responsible Yurii Nabasov --> */
+/* Mobile first design */
+
+/* Додаємо фонову картинку */
+.covers-section {
+  background-color: #1c1d20;
+  background-image: url(../img/covers_background/background-covers_1x.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-width: 375px;
+  height: 508px;
+  /* max-width: 1440px;
+  height: 960px; */
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-top: 82px;
+  padding-bottom: 82px; */
+  position: relative; /* Це забезпечує правильне позиціонування дочірніх елементів */
+  overflow: hidden; /* Обмежує вихід за межі секції */
+}
+
+/* Приховуємо заголовок */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* Стилізуємо основний блок */
+body {
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.content {
+  position: relative;
+}
+
+.marquee {
+  position: relative; /*Змінено з absolute */
+  width: 100%;
+  height: 100%;
+  overflow: hidden; /* Прибирає вихід зображень за межі */
+  display: flex;
+  flex-direction: column; /* Розміщує списки вертикально */
+  gap: 40px; /* Додає зазор у 40px між списками */
+}
+
+.marquee-list {
+  display: flex;
+  transform: rotate(16deg) translate(-15%, -125%); /* Зміщуємо вліво і вгору */
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+  /* height: 314px;  */
+  /* overflow: hidden; */
+  gap: 40px; /* Додає зазор у 40px між елементами */
+}
+
+.marquee-item {
+  flex-shrink: 0;
+  width: 282px; /* Фіксована ширина карток */
+  height: 162px;
+  /* width: 544px; 
+  height: 314px; */
+  overflow: hidden; /* Приховує зайві частини зображення */
+  position: relative; /* Забезпечує правильне позиціонування для зображення */
+  /* margin-right: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: marqueeLine 10s linear infinite;
+}
+
+.marquee-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Обрізає зображення, щоб заповнити контейнер, зберігаючи пропорції */
+  object-position: center; /* Центрує зображення в межах контейнера */
+}
+
+@keyframes marqueeLine {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-150%); /* Рух на 150% ширини екрана */
+  }
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .covers-section {
+    background-image: url(../img/covers_background/background-covers_2x.webp);
+  }
+}
+
+/* --COVERS TABLET-- */
+@media screen and (min-width: 768px) {
+  .covers-section {
+    max-width: 768px;
+    height: 960px;
+  }
+
+  .marquee-item {
+    width: 544px; /* Фіксована ширина карток */
+    height: 314px;
+  }
+}
+
+/* --/COVERS TABLET-- */
+/* --COVERS DESKTOP-- */
+
+@media screen and (min-width: 1440px) {
+  .covers-section {
+    max-width: 1440px;
+    /* height: 960px; */
+  }
+}
+/* --/COVERS DESKTOP-- */

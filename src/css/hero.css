@@ -2,181 +2,172 @@
   .hero {
     background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
+        background-position: center;
+        padding-bottom: 30px;
+        margin-bottom: 60px; 
+        height: 100vh; /* Сделаем высоту на весь экран */
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 20px;
-    position: relative; 
-}
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    position: relative; /* Для позиционирования социальных ссылок */
+  }
+  h1 {
+    font-weight: 500;
+font-size: 50px;
+line-height: 1;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: #fafafa;
+padding: 0 20px;
 
-h1 {
-    font-size: 40px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: #fafafa;
-}
-
-.container-social-links {
-    width: 342px;
-    position: absolute; 
-    bottom: 20px; 
-    right: 20px; 
-
-}
-
-.hero-social-links-list {
+  }
+  
+  .hero-social-links-list {
     display: flex;
     align-items: flex-start;
-    justify-content: flex-start;
     flex-direction: row;
     gap: 4px;
-}
-
-.hero-link {
+    justify-content: flex-end;
+        padding: 15px;
+        position: absolute;
+        bottom: 25px;
+  }
+  .hero-link, .hero-email {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    padding: 10px 12px;
-    width: 37px;
-}
-.hero-email {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    padding: 10px 12px;
-    width: 190px;
-    display: flex;
-    justify-content: center;
-}
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
+border: 1px solid rgba(250, 250, 250, 0.2);
+border-radius: 60px;
+padding: 10px 12px;
+width: 37px;
+height: 37px;
+font-weight: 500;
+font-size: 14px;
+letter-spacing: -0.02em;
+  }
+  .hero-email {
+    width: auto;
+    
+  }
 }
 
 /*-----------------Tablet----------------*/
 
-  @media only screen and (min-width: 768px) and (max-width: 1279px) {
-    .hero {
-        padding: 30px;
-        background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-    .container {
-        padding: 32px 16px;
-    }
-      h1 {
-        font-size: 90px;
-        text-transform: uppercase;
-      }
+@media only screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero {
+    background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
+    background-size: cover;
+        background-position: center;
+        padding-bottom: 30px;
+        margin-bottom: 60px; 
+        height: 100vh; /* Сделаем высоту на весь экран */
+    display: flex;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    position: relative; /* Для позиционирования социальных ссылок */
+  }
+  h1 {
+    font-weight: 500;
+font-size: 90px;
+line-height: 1;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: #fafafa;
+padding: 0 20px;
+
+  }
   
-      .container-social-links {
-        display: flex;
-        justify-content: flex-start;
-        margin-top: auto;
+  .hero-social-links-list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: flex-end;
+        padding: 15px;
         position: absolute;
-        bottom: 20px; 
-        right: 20px; 
-        align-items: center;
-        gap: 8px;
-      }
-
-      .hero-social-links-list {
-        display: flex;
-        flex-wrap: wrap; 
-        gap: 8px;
-      }
-  
-      .hero-link {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: row;
-        gap: 10px;
-        border: 1px solid rgba(250, 250, 250, 0.2);
-        border-radius: 60px;
-        padding: 18px 24px;
-        width: 55px;
-        
-      }
-  
-      .hero-email {
-        border: 1px solid rgba(250, 250, 250, 0.2);
-        border-radius: 60px;
-        padding: 18px 24px;
-        width: 223px;
-        
-      }
-    }
-
+        bottom: 30px;
+        right: 30px;
+   
+  }
+  .hero-link, .hero-email {
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
+border: 1px solid rgba(250, 250, 250, 0.2);
+border-radius: 60px;
+padding: 18px 20px;
+width: 55px;
+height: 55px;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: -0.02em;
+  }
+  .hero-email {
+    width: auto;
+    
+  }
+}
   
 
   /*-----------------Desktop----------------*/
 
-  @media only screen and (min-width: 1280px) {
-    .hero {
-      background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
-      background-size: cover; 
-      background-position: center; 
-      background-repeat: no-repeat; 
-      background-attachment: fixed; 
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      
-    }
-  
-    h1 {
-      font-weight: 500;
-      font-size: 90px;
-      line-height: 1;
-      letter-spacing: -0.03em;
-      text-transform: uppercase;
-      color: #fafafa;
-      padding: 100px;
+@media only screen and (min-width: 1280px) {
+  .hero {
+    background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
+    background-size: cover;
+        background-position: center;
+        padding-bottom: 30px;
+        margin-bottom: 60px; 
+        height: 100vh; /* Сделаем высоту на весь экран */
+    display: flex;
+    justify-content: center; /* Центрируем содержимое по горизонтали */
+    align-items: center; /* Центрируем содержимое по вертикали */
+    position: relative; /* Для позиционирования социальных ссылок */
+  }
+  h1 {
+    font-weight: 500;
+font-size: 90px;
+line-height: 1;
+letter-spacing: -0.03em;
+text-transform: uppercase;
+color: #fafafa;
+padding: 0 20px;
 
-    }
-    .container-social-links {
-      width: 473px;
-      position: absolute;
-      bottom: 20px; 
-      right: 20px; 
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .hero-social-links-list {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
-      flex-direction: row;
-      gap: 8px;
-      
-    }
-    .hero-link {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      gap: 10px;
-      border: 1px solid rgba(250, 250, 250, 0.2);
-      border-radius: 60px;
-      padding: 18px 20px;
-      width: 55px;
+  }
   
-    }
-    .hero-email { 
-     
-      border: 1px solid rgba(250, 250, 250, 0.2);
-      border-radius: 60px;
-      padding: 18px 24px;
-      width: 223px;
-      
-    }
-  } 
+  .hero-social-links-list {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    justify-content: flex-end;
+        padding: 15px;
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+   
+  }
+  .hero-link, .hero-email {
+    display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+gap: 10px;
+border: 1px solid rgba(250, 250, 250, 0.2);
+border-radius: 60px;
+padding: 18px 20px;
+width: 55px;
+height: 55px;
+font-weight: 500;
+font-size: 16px;
+letter-spacing: -0.02em;
+  }
+  .hero-email {
+    width: auto;
+    
+  }
+} 

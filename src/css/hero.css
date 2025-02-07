@@ -1,6 +1,6 @@
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+
   .hero {
-    background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
+    background-image: image-set( url("/img/hero_webp/hero_colors_1_1x.webp") 1x, url("/img/hero_webp/hero_colors_1_2x.webp") 2x);
     background-size: cover;
     background-position: center;
     padding-bottom: 30px;
@@ -49,66 +49,29 @@
   }
   .hero-email {
     width: auto;
-    
   }
-}
+
 
 /*-----------------Tablet----------------*/
 
 @media only screen and (min-width: 768px) and (max-width: 1279px) {
-  .hero {
-    background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 30px;
-    margin-bottom: 60px; 
-    height: 100vh; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    position: relative; 
-  }
-  h1 {
-    font-weight: 500;
-    font-size: 90px;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #fafafa;
-    padding: 0 20px;
-
-  }
   
+  h1 {
+    font-size: 90px;
+  }
   .hero-social-links-list {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
     gap: 8px;
-    justify-content: flex-end;
-    padding: 15px;
-    position: absolute;
     bottom: 30px;
     right: 30px;
-   
   }
   .hero-link, .hero-email {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
     padding: 18px 20px;
     width: 55px;
     height: 55px;
-    font-weight: 500;
     font-size: 16px;
-    letter-spacing: -0.02em;
   }
   .hero-email {
     width: auto;
-    
   }
 }
   
@@ -116,58 +79,8 @@
   /*-----------------Desktop----------------*/
 
 @media only screen and (min-width: 1280px) {
-  .hero {
-    background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 30px;
-    margin-bottom: 60px; 
-    height: 100vh; 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    position: relative; 
-  }
-  h1 {
-    font-weight: 500;
-    font-size: 90px;
-    line-height: 1;
-    letter-spacing: -0.03em;
-    text-transform: uppercase;
-    color: #fafafa;
-    padding: 0 20px;
-
-  }
   
   .hero-social-links-list {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    gap: 8px;
-    justify-content: flex-end;
     padding: 15px;
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-   
-  }
-  .hero-link, .hero-email {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    order: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    padding: 18px 20px;
-    width: 55px;
-    height: 55px;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
-  }
-  .hero-email {
-    width: auto;
-    
   }
 } 

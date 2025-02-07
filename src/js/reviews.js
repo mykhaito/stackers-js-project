@@ -1,12 +1,9 @@
-// Добавьте в начало файла
 import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 import 'swiper/css';
 
-// Инициализация модулей
 Swiper.use([Navigation]);
 
-// Reviews data
 const reviewsData = [
   {
     name: "Natalia",
@@ -42,10 +39,8 @@ const reviewsData = [
   },
 ];
 
-// Swiper instance
 let reviewsSwiper = null;
 
-// Render reviews
 function renderReviews() {
   const list = document.querySelector('.reviews-list');
   
@@ -65,7 +60,6 @@ function renderReviews() {
   `).join('');
 }
 
-// Show error
 function showError() {
   const errorContainer = document.querySelector('.reviews-error');
   errorContainer.classList.remove('visually-hidden');
@@ -74,7 +68,6 @@ function showError() {
   document.querySelector('.reviews-nav').style.display = 'none';
 }
 
-// Initialize Swiper
 function initSwiper() {
   reviewsSwiper = new Swiper('.reviews-slider', {
     modules: [Navigation],
@@ -97,7 +90,6 @@ function initSwiper() {
   });
 }
 
-// Initialization
 document.addEventListener('DOMContentLoaded', () => {
   try {
     if (!reviewsData.length) throw new Error('No reviews');

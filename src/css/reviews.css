@@ -1,4 +1,3 @@
-/* Base styles */
 .reviews {
     padding-bottom: 64px;
   }
@@ -13,7 +12,7 @@
   }
   
   .reviews-list {
-    list-style: none;
+    list-style: none; 
     margin: 0;
     padding: 0;
   }
@@ -98,7 +97,6 @@
     font-weight: 600;
   }
   
-  /* Icons */
   .icon-arrow-left,
   .icon-arrow-right {
     fill: var(--arrow-color);
@@ -110,7 +108,6 @@
     fill: var(--button-text-color);
   }
   
-  /* Tablet */
   @media (min-width: 768px) {
     .reviews-item {
       padding: 32px;
@@ -122,7 +119,6 @@
     }
   }
   
-  /* Desktop */
   @media (min-width: 1440px) {
     .reviews-item {
       min-height: 400px;

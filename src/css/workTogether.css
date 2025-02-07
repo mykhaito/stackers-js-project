@@ -1,0 +1,221 @@
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 16px;
+  padding-right: 16px;
+  max-width: 100%;
+  background-image: url('./src/img/work_together/background-mobile-min.png');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+.footer-head {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+}
+.red-text {
+  color: #ed3b44;
+}
+.footer-section-one {
+  display: flex;
+}
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 63px;
+  gap: 16px;
+}
+.footer-input {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  padding-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.footer-input::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+.footer-btn {
+  margin-top: 16px;
+  border-radius: 100%;
+  background-color: #ed3b44;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  padding: 40px 32px 41px 32px;
+  width: 100px;
+  height: 100px;
+  border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-btn:hover,
+.footer-btn:focus {
+  background-color: #e0373f;
+}
+.footer-contacts {
+  display: flex;
+  gap: 4px;
+  margin-top: 64px;
+  width: 300px;
+}
+.footer-contacts-address {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 12px;
+  width: 178px;
+  height: 37px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  white-space: nowrap;
+}
+.footer-contacts-address:hover,
+.footer-contacts-address:focus {
+  border: 1px solid #fafafa;
+}
+.modal-window-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(100%);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-window-backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+.footer-modal-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  border-radius: 20px;
+  padding: 64px 32px;
+  width: 343px;
+  height: 276px;
+  background-color: #1c1d20;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+.modal-header {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #fafafa;
+}
+.modal-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.6);
+}
+.footer-modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  padding: 0;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+
+.footer-modal-close {
+  stroke-width: 3px;
+  stroke: #fafafa;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-section {
+    padding-left: 32px;
+    padding-right: 32px;
+    background-image: url('/src/img/work_together/background-tablet-min.png');
+  }
+  .footer-head {
+    font-size: 64px;
+  }
+  .footer-form {
+    flex-direction: row;
+    margin-top: 18px;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .footer-input {
+    width: 245px;
+    height: 44px;
+  }
+  .footer-btn {
+    margin-top: 0;
+    padding: 65px 57px 66px 57px;
+    width: 150px;
+    height: 150px;
+  }
+  .footer-contacts {
+    gap: 8px;
+    margin-top: 18px;
+    width: 418px;
+  }
+  .footer-contacts-address {
+    padding: 18px 32px;
+    width: 239px;
+    height: 55px;
+    font-size: 16px;
+  }
+  .footer-modal-window {
+    width: 492px;
+    height: 246px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .footer-section {
+    padding-left: 196px;
+    padding-right: 196px;
+    background-image: url('/src/img/work_together/background-laptop-min.png');
+  }
+  .footer-input {
+    width: 390px;
+  }
+  .footer-btn {
+    margin-left: 54px;
+  }
+}

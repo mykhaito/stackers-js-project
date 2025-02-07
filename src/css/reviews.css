@@ -9,7 +9,7 @@
     line-height: 150%;
     letter-spacing: -0.02em;
     margin-bottom: 32px;
-    color: rgba(250, 250, 250, 0.4);
+    color: var(--arrow-color);
   }
   
   .reviews-list {

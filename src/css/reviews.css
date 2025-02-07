@@ -100,7 +100,7 @@
   
   .icon-arrow-left,
   .icon-arrow-right {
-    fill: var(--arrow-color);
+    fill: transparent;
     transition: fill 0.3s ease;
   }
   

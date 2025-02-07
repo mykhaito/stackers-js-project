@@ -1,8 +1,5 @@
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
-
-Swiper.use([Navigation]);
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 
 const reviewsData = [
   {
@@ -136,5 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderReviews();
   initSwiper();
 
-  document.querySelector('.reviews-nav').style.display = 'flex';
+  const nav = document.querySelector('.reviews-nav');
+  if (nav) nav.style.display = 'flex';
 });

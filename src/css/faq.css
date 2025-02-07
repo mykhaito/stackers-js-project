@@ -81,19 +81,16 @@
   }
 
   .ac-css:last-child {
-    padding-bottom: 0;
+    padding-bottom: 24px;
   }
 
   .ac-css .ac-trigger-css {
-    padding: 0px 90px 26px 0px;
+    padding: 0px 90px 0px 0px;
   }
 
   .ac-css .ac-panel-css .ac-text-css {
-    padding-bottom: 0;
-  }
-
-  .ac-css .ac-panel-css .ac-text-css:last-child {
-    padding-bottom: 24px;
+    padding-top: 26px;
+    padding-bottom: 0px;
   }
 
   .btn-svg {
@@ -118,7 +115,7 @@
   }
 
   .ac-css .ac-panel-css .ac-text-css:last-child {
-    padding-bottom: 0;
+    padding-bottom: 0px;
   }
 
   .ac-css .ac-trigger-css {
@@ -160,6 +157,6 @@
 
   .ac-css:nth-child(6) {
     order: 6;
-    padding-bottom: 32px;
+    padding-top: 32px;
   }
 }

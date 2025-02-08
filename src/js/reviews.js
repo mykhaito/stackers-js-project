@@ -1,6 +1,4 @@
 import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
-
 
 const avatar1 = new URL('../img/reviews/avatar-1.jpg', import.meta.url).href;
 const avatar1_2x = new URL('../img/reviews/avatar-1@2x.jpg', import.meta.url).href;

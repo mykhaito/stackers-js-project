@@ -3,4 +3,4 @@ function dt(s){return s&&s.__esModule&&Object.prototype.hasOwnProperty.call(s,"d
         rotateZ(${u.rotate?n?-O:O:0}deg)
         scale(${A})
       `;if(u.slideShadows){let T=l.querySelector(".swiper-slide-shadow");T||(T=fe("cards",l)),T&&(T.style.opacity=Math.min(Math.max((Math.abs(w)-.5)/.5,0),1))}l.style.zIndex=-Math.abs(Math.round(d))+f.length;const S=xe(u,l);S.style.transform=L}},setTransition:f=>{const c=e.slides.map(n=>ce(n));c.forEach(n=>{n.style.transitionDuration=`${f}ms`,n.querySelectorAll(".swiper-slide-shadow").forEach(u=>{u.style.transitionDuration=`${f}ms`})}),ze({swiper:e,duration:f,transformElements:c})},perspective:()=>!0,overwriteParams:()=>({_loopSwapReset:!1,watchSlidesProgress:!0,loopAdditionalSlides:3,centeredSlides:!0,virtualTranslate:!e.params.cssMode})})}const si=[Ls,Is,As,zs,Os,Ds,$s,ks,Hs,Gs,Bs,Rs,Fs,Xs,Ys,Ns,Us,Ks,Zs,Qs,Js,ei,ti];Z.use(si);export{ii as A,Z as S};
-//# sourceMappingURL=vendor-DtZKWCDM.js.map
+//# sourceMappingURL=vendor-BW0eecRB.js.map

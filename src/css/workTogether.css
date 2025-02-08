@@ -21,6 +21,8 @@
 }
 .footer-section-one {
   display: flex;
+  gap: 8px;
+  margin-bottom: 4px;
 }
 .footer-form {
   display: flex;
@@ -92,10 +94,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  transform: translateX(100%);
+  transform: translateY(-100%);
   width: 100%;
   height: 100%;
-  background-color: rgba(46, 47, 66, 0.4);
+  background-color: rgba(15, 15, 16, 0.6);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -107,7 +109,7 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateX(0);
+  transform: translateY(0);
 }
 .footer-modal-window {
   display: flex;
@@ -171,6 +173,10 @@
     padding-bottom: 169px;
     background-image: url('/img/work_together/background-tablet.png');
     background-position: 570px 0;
+  }
+  .footer-section-one {
+    gap: 20px;
+    margin-bottom: 7px;
   }
   .footer-img {
     width: 70px;

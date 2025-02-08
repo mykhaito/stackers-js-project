@@ -16,6 +16,10 @@
   text-transform: uppercase;
   color: #fafafa;
 }
+.footer-img {
+  min-width: 44px;
+  height: 44px;
+}
 .red-text {
   color: #ed3b44;
 }

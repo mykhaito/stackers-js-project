@@ -87,7 +87,7 @@
 
 @media (min-width: 375px) and (max-width: 767px) {
   .benefits-item {
-    min-width: 344px;
+    width: 100%;
   }
 }
 

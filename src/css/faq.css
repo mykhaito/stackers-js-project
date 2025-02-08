@@ -1,0 +1,162 @@
+.faq {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.faq-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  margin-bottom: 32px;
+}
+
+.ac-css {
+  border: none;
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: transparent;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 0px;
+}
+
+.ac-css:last-child {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.ac-css .ac-trigger-css {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  padding: 0px 44px 20px 0px;
+}
+
+.ac-css .ac-trigger-css:focus {
+  color: #fafafa;
+}
+
+.ac-css .ac-panel-css .ac-text-css {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.ac .ac-trigger::after {
+  display: none;
+}
+
+.btn-svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34px;
+  height: 34px;
+  fill: transparent;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ac.is-active .btn-svg {
+  transform: rotate(180deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .faq {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .ac-css {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .ac-css:last-child {
+    padding-bottom: 24px;
+  }
+
+  .ac-css .ac-trigger-css {
+    padding: 0px 90px 0px 0px;
+  }
+
+  .ac-css .ac-panel-css .ac-text-css {
+    padding-top: 26px;
+    padding-bottom: 0px;
+  }
+
+  .btn-svg {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .accordion-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px;
+  }
+  .ac-css {
+    width: 50%;
+    padding-right: 32px;
+  }
+
+  .last-desc {
+    max-width: 485px;
+  }
+
+  .ac-css .ac-panel-css .ac-text-css:last-child {
+    padding-bottom: 0px;
+  }
+
+  .ac-css .ac-trigger-css {
+    padding-right: 0px;
+  }
+
+  .ac-css:nth-child(3),
+  .ac-css:nth-child(6) {
+    border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  }
+
+  .ac-css:nth-child(4),
+  .ac-css:nth-child(5),
+  .ac-css:nth-child(6) {
+    border-left: 1px solid rgba(250, 250, 250, 0.2);
+    padding-left: 32px;
+    padding-right: 0;
+  }
+
+  .ac-css:nth-child(1) {
+    order: 1;
+  }
+
+  .ac-css:nth-child(2) {
+    order: 3;
+  }
+
+  .ac-css:nth-child(3) {
+    order: 5;
+  }
+
+  .ac-css:nth-child(4) {
+    order: 2;
+  }
+
+  .ac-css:nth-child(5) {
+    order: 4;
+  }
+
+  .ac-css:nth-child(6) {
+    order: 6;
+    padding-top: 32px;
+  }
+}

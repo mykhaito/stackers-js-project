@@ -4,9 +4,8 @@
   padding-left: 16px;
   padding-right: 16px;
   max-width: 100%;
-  background-image: url('./src/img/work_together/background-mobile-min.png');
-  background-size: cover;
-  background-position: right center;
+  background-image: url('/img/work_together/background-mobile.png');
+  background-position: 290px 0;
   background-repeat: no-repeat;
 }
 .footer-head {
@@ -168,7 +167,14 @@
   .footer-section {
     padding-left: 32px;
     padding-right: 32px;
-    background-image: url('/src/img/work_together/background-tablet-min.png');
+    padding-top: 80px;
+    padding-bottom: 169px;
+    background-image: url('/img/work_together/background-tablet.png');
+    background-position: 570px 0;
+  }
+  .footer-img {
+    width: 70px;
+    height: 70px;
   }
   .footer-head {
     font-size: 64px;
@@ -210,7 +216,8 @@
   .footer-section {
     padding-left: 196px;
     padding-right: 196px;
-    background-image: url('/src/img/work_together/background-laptop-min.png');
+    background-image: url('/img/work_together/background-laptop.png');
+    background-position: 1040px 0;
   }
   .footer-input {
     width: 390px;

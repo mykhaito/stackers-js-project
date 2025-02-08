@@ -1,22 +1,26 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <symbol id="icon-arrow-up" viewBox="0 0 42 42"> 
-      <rect x="-0.5" y="0.5" width="41" height="41" rx="20.5" transform="matrix(1 0 0 -1 1 42)" stroke="#FAFAFA" stroke-opacity="0.2"/>
+      <!-- <rect x="-0.5" y="0.5" width="41" height="41" rx="20.5" transform="matrix(1 0 0 -1 1 42)" stroke="#FAFAFA" stroke-opacity="0.2"/> -->
       <path d="M26 23.5L21 18.5L16 23.5" stroke="#FAFAFA" stroke-width="2"/>
     </symbol>
-    <symbol id="icon-arrow-down" viewBox="0 0 42 42">
+    <!-- <symbol id="icon-arrow-down" viewBox="0 0 42 42">
       <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#FAFAFA" stroke-opacity="0.2"/>
       <path d="M26 18.5L21 23.5L16 18.5" stroke="#FAFAFA" stroke-width="2"/>
-    </symbol>
+    </symbol> -->
     <symbol id="icon-arrow-left" viewBox="0 0 68 68">
       <rect x="67.5" y="67.5" width="67" height="67" rx="33.5" transform="rotate(180 67.5 67.5)" stroke="#FAFAFA" stroke-opacity="0.2"/>
       <path d="M44.6667 34H23.3334" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M31.3333 42L23.3333 34L31.3333 26" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M23.3334 34L31.3333 26" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M23.3334 34L31.3333 42" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- <path d="M31.3333 42L23.3333 34L31.3333 26" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> -->
     </symbol>
     <symbol id="icon-arrow-right" viewBox="0 0 68 68">
       <rect x="0.5" y="0.5" width="67" height="67" rx="33.5" stroke="#FAFAFA" stroke-opacity="0.5"/>
       <path d="M23.3333 34H44.6666" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M36.6667 26L44.6667 34L36.6667 42" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M44.6666 34L36.6667 26" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M44.6666 34L36.6667 42" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <!-- <path d="M36.6667 26L44.6667 34L36.6667 42" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> -->
     </symbol>
     <symbol id="icon-services-1" viewBox="0 0 48 48">
       <rect width="48" height="48" rx="10" fill="#ED3B44"/>

@@ -65,9 +65,9 @@
 
 @media only screen and (min-width: 768px) {
   .hero-title {
-  font-size: 90px;
-  max-width: 632px;
-  min-width: 600px;
+    font-size: 90px;
+    max-width: 632px;
+    min-width: 600px;
   }
 
   .hero-social-links-list {
@@ -90,5 +90,5 @@
   .hero-title {
     max-width: 1084px;
     min-width: 1000px;
-    }
+  }
 }

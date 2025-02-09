@@ -41,5 +41,12 @@
       <rect width="48" height="48" rx="10" fill="#ED3B44"/>
       <path d="M30.1626 14H17.8374C17.3749 14 17 14.3749 17 14.8374C17 17.5027 18.0588 20.0588 19.9434 21.9434L21.1626 23.1626C21.2836 23.2836 21.3442 23.3442 21.3875 23.4023C21.6519 23.7569 21.6519 24.2431 21.3875 24.5977C21.3442 24.6558 21.2836 24.7164 21.1626 24.8374L19.9434 26.0566C18.0588 27.9412 17 30.4973 17 33.1626C17 33.6251 17.3749 34 17.8374 34H30.1626C30.6251 34 31 33.6251 31 33.1626C31 30.4973 29.9412 27.9412 28.0566 26.0566L26.8374 24.8374C26.7164 24.7164 26.6558 24.6558 26.6125 24.5977C26.3481 24.2431 26.3481 23.7569 26.6125 23.4023C26.6558 23.3442 26.7164 23.2836 26.8374 23.1626L28.0566 21.9434C29.9412 20.0588 31 17.5027 31 14.8374C31 14.3749 30.6251 14 30.1626 14Z" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
     </symbol>
+    <symbol id="icon-burger-menu" viewBox="0 0 28 28">
+<path d="M3.5 9.91666H24.5M3.5 18.0833H24.5" stroke="#FAFAFA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+</symbol>
+<symbol id="icon-close-btn" viewBox="0 0 32 32">
+<path fill="none" stroke="#fbfbfb" style="stroke: var(--color1, #fbfbfb)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M24 8l-16 16"></path>
+<path fill="none" stroke="#fbfbfb" style="stroke: var(--color1, #fbfbfb)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3" d="M8 8l16 16"></path>
+</symbol>
   </defs>
 </svg>

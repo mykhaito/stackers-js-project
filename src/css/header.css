@@ -1,0 +1,111 @@
+/* <!-- section HEADER responsible Yurii Nabasov --> */
+/* Mobile first design */
+
+.logo-img {
+  border-radius: 18px;
+  width: 80px;
+  height: 80px;
+  margin-right: 8px;
+}
+
+.header-logo {
+  display: flex;
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: transparent;
+}
+
+.dropdown {
+  display: none;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+}
+
+.dropbtn {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--main-text);
+  padding: 10px;
+  width: 60px;
+  height: 39px;
+}
+
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+  margin-top: 32px;
+}
+
+.mobile-open-btn {
+  border: none;
+  line-height: 0;
+  background-color: transparent;
+  padding: 0;
+  stroke: white;
+}
+
+.mobile-btn-icon {
+  stroke: currentColor;
+}
+
+.header-order-button {
+  display: none;
+}
+
+/* --HEADER TABLET-- */
+@media screen and (min-width: 768px) {
+  .dropdown {
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+  }
+  .dropdown-content {
+    display: none;
+    /* display: grid; */
+    gap: 5px;
+    justify-items: center;
+  }
+  .mobile-open-btn {
+    display: none;
+  }
+
+  .header-order-button {
+    display: block;
+    width: 163px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+    border-radius: 60px;
+    padding: 18px 24px;
+    background: var(--button-text-color);
+    border: none;
+  }
+
+  .mobile-order-button:hover,
+  .mobile-order-button:focus {
+    background-color: #e0373f;
+  }
+}
+
+/* --/HEADER TABLET-- */
+@media screen and (min-width: 1440px) {
+}
+/* --/HEADER DESKTOP & section HAEDER-- */

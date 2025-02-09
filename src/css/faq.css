@@ -95,6 +95,7 @@
 
   .faq-list-item .faq-desc {
     padding: 0px 90px 0px 0px;
+    outline: none;
   }
 
   .faq-list-item .faq-panel .faq-text {

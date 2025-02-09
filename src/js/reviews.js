@@ -1,4 +1,6 @@
 import Swiper from 'swiper/bundle';
+import { Keyboard } from 'swiper/modules';
+
 
 const avatar1 = new URL('../img/reviews/avatar-1.jpg', import.meta.url).href;
 const avatar1_2x = new URL('../img/reviews/avatar-1@2x.jpg', import.meta.url).href;
@@ -134,6 +136,10 @@ function initSwiper() {
         slidesPerView: 4,
         spaceBetween: 16
       }
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
     },
   });
 }

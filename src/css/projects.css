@@ -105,8 +105,10 @@
   cursor: not-allowed;
 }
 
-.projects-btn-prev:hover .icon-arrow-left,
-.projects-btn-next:hover .icon-arrow-right {
+.projects-btn-prev:hover .projects-btn-icon,
+.projects-btn-next:hover .projects-btn-icon,
+.projects-btn-prev:focus .projects-btn-icon,
+.projects-btn-next:focus .projects-btn-icon {
   fill: var(--button-text-color);
 }
 

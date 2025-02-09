@@ -15,7 +15,7 @@
   );
   background-size: cover;
   background-position: center;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   color: var(--main-text);
@@ -26,6 +26,7 @@
 
 .mobile-menu.is-open {
   transform: translateX(0);
+  display: flex;
 }
 
 .mobile-menu-container {

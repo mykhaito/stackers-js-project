@@ -1,33 +1,30 @@
-.container {
+.projects-container {
     margin-left: auto;
     margin-right: auto;
     padding: 0 16px;
 }
-.slider-container {
-    position: relative;
-    margin: auto;
-}
 .projects-title {
     font-weight: 600;
     font-size: 16px;
-    line-height: 150%;
+    line-height: 1.50;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: rgba(250, 250, 250, 0.4);
+    color: var(--arrow-color);
     margin-bottom: 32px;
 }
-.swiper-wrapper {
+.swiper-projects-js {
     display: flex;
-    overflow: hidden;
-    flex-wrap: nowrap;
+    flex-direction: column;
+    transition: transform 250ms ease-in-out;
 }
 .projects-card {
     border-radius: 24px;
     display: flex;
     flex-direction: column;
-    transition: all 250ms ease-in-out;
-    overflow: hidden;
     max-height: 812px;
+    transition: all 250ms ease-in-out, 
+                opasity 250s ease-in-out; 
+     overflow: hidden;           
 }
 .projects-box {
     padding: 32px;
@@ -56,7 +53,7 @@
 .projects-box-text {
     font-weight: 500;
     font-size: 24px;
-    line-height: 117%;
+    line-height: 1.17;
     letter-spacing: -0.03em;
     color: #1c1d20;
     margin-top: auto;
@@ -70,10 +67,10 @@
     height: 45px;
     margin-top: 32px;
     text-align: center;
-    background-color: #ed3b44;
+    background-color: var(--button-text-color);
     font-weight: 500;
     letter-spacing: -0.02em;
-    color: #fafafa;
+    color: var(--main-text-color);
     cursor: pointer;
     transition: background-color 250ms ease-in-out, 
                 transform 250ms ease-in-out;
@@ -83,14 +80,10 @@
     background-color: #e0373f;
     transform: scale(1.05);
 }
-.projects-img {
+.projects-photo {
     display: block;
-    background-color: #242527;
-    min-width: 311px;
-    min-height: 195px;
+    background-color: var(--cards-color);
     padding: 100px 16px;
-    width: 100%;
-    margin: 0 auto;
     object-fit: cover;
     transition: all 250ms ease-in-out;
 }
@@ -100,9 +93,7 @@
     gap: 14px;
     justify-content: center;
 }
-.projects-btn-left,
-.projects-btn-right  {
-    cursor: pointer;
+.projects-btn {
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     background-color: inherit;
@@ -114,12 +105,18 @@
     height: 52px;
     transition: all 250ms ease-in-out;
 }
-.projects-btn-left:hover,
-.projects-btn-left:focus,
-.projects-btn-right:hover, 
-.projects-btn-right:focus{
+.projects-btn:hover {
     border: 1px solid rgba(250, 250, 250, 0.5);
+    background-color: #613434;
+    fill: #613434;
+    transform: scale(1.05);
 }
+.projects-btn:active {
+    background-color: #e0373f;
+    fill: #e0373f;
+    transform: scale(1.1);
+    border: 1px solid rgba(250, 250, 250, 0.7);
+} 
 .swiper-button-left.disabled,
 .swiper-button-right.disabled {
     opacity: 0.5;
@@ -127,23 +124,21 @@
     border: 1px solid rgba(250, 250, 250, 0.2);
     cursor: not-allowed;
 }
-.projects-btn-icon-left
-.projects-btn-icon-right {
+.projects-btn-icon {
     stroke: #3B3B3B;
     transition: stroke 250ms ease-in-out;
 }
-.projects-btn-icon-left:active,
-.projects-btn-icon-right:active {
-    stroke: #FAFAFA;
+.projects-btn-icon:active {
+    stroke: var(--main-text-color);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
-    .container {
+@media screen and (min-width: 768px) {
+    .projects-container {
         padding: 0 32px;
     }
-    .projects-card {
+    /* .projects-card {
         max-height: 1191px;
-    }
+    } */
     .projects-box {
         padding: 64px;
         min-height: 566px;
@@ -158,43 +153,38 @@
     .projects-box-text {
         max-width: 494px;
         font-size: 44px;
-        line-height: 100%;
+        line-height: 1;
     }
     .projects-box-link {
         padding: 18px 50px;
         width: 177px;
         height: 55px;
     }
-    .projects-img {
-        width:100%;
-        height: auto;
+    .projects-photo {
         padding: 120px 45px;
     }
     .projects-buttons {
         margin-top: 64px;
         gap: 20px;
     }
-    .projects-btn-left,
-    .projects-btn-right {
+    .projects-btn {
         padding: 18px;
         width: 68px;
         height: 68px;
-    }  
+    } 
 }
 
 @media screen and (min-width: 1440px) {
     .projects-card {
         flex-direction: row;
         align-items: stretch;
-        max-height: 625px;
     }
     .projects-box {
         min-height: 625px;
         min-width: 688px;
         width: 50%;
     }
-    .projects-img {
-        max-width: 50%;
+    .projects-photo {
         padding: 120px 37px;
     }
 }

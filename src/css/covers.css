@@ -1,4 +1,4 @@
-/* <!-- COVERS responsible Yurii Nabasov --> */
+/* <!-- section COVERS responsible Yurii Nabasov --> */
 /* Mobile first design */
 
 /* Додаємо фонову картинку */
@@ -13,23 +13,20 @@
   /* height: 100vw;*/
   margin-left: auto;
   margin-right: auto;
-  /* Падінги між секціями не додаю, якщо потрібно буде - для mobile 32px tablet 48px desktop 82px */
-  /* padding-top: 82px;
-  padding-bottom: 82px; */
   position: relative;
   overflow: hidden;
 }
 
 /* Стилізуємо основний блок */
-body {
+/* body {
   margin: 0;
-}
+} */
 
-*,
+/* *,
 *::before,
 *::after {
   box-sizing: border-box;
-}
+} */
 
 .marquee {
   position: relative;
@@ -60,6 +57,7 @@ body {
   align-items: center;
   justify-content: center;
   animation: marqueeLine 10s linear infinite;
+  /* animation-play-state: paused; */
 }
 
 .marquee-item img {
@@ -106,4 +104,4 @@ body {
     max-width: 1440px;
   }
 }
-/* --/COVERS DESKTOP-- */
+/* --/COVERS DESKTOP & section COVERS-- */

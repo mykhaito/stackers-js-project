@@ -1,8 +1,8 @@
 <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <symbol id="icon-arrow-up" viewBox="0 0 42 42"> 
+    <symbol id="icon-arrow-up" viewBox="0 0 20 20">
       <!-- <rect x="-0.5" y="0.5" width="41" height="41" rx="20.5" transform="matrix(1 0 0 -1 1 42)" stroke="#FAFAFA" stroke-opacity="0.2"/> -->
-      <path d="M26 23.5L21 18.5L16 23.5" stroke="#FAFAFA" stroke-width="2"/>
+      <path d="M15 12.5L10 7.5L5 12.5" stroke="#FAFAFA" stroke-width="2" />
     </symbol>
     <!-- <symbol id="icon-arrow-down" viewBox="0 0 42 42">
       <rect x="0.5" y="0.5" width="41" height="41" rx="20.5" stroke="#FAFAFA" stroke-opacity="0.2"/>

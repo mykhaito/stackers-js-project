@@ -8,9 +8,9 @@ const swiperContainer = document.querySelector('.swiper-projects-js');
 
 const swiper = new Swiper(swiperContainer, {
   modules: [Navigation, Keyboard],
-  direction:	'horizontal',
+  direction: 'horizontal',
   spaceBetween: 50,
-  slidesPerView: 1, 
+  slidesPerView: 1,
   loop: false,
   speed: 400,
   navigation: {
@@ -18,7 +18,7 @@ const swiper = new Swiper(swiperContainer, {
     prevEl: prevBtn,
   },
   keyboard: {
-    enabled: true, 
+    enabled: true,
     onlyInViewport: false,
   },
   on: {
@@ -32,7 +32,7 @@ const swiper = new Swiper(swiperContainer, {
       updateButtonsState(this);
     },
   },
-});  
+});
 
 function updateButtonsState(swiper) {
   prevBtn.disabled = swiper.isBeginning;
@@ -42,16 +42,16 @@ function updateButtonsState(swiper) {
   nextBtn.classList.toggle('disabled', swiper.isEnd);
 }
 
-document.addEventListener('keydown', (evt) => {
+document.addEventListener('keydown', evt => {
   if (evt.key === 'ArrowLeft' && !prevBtn.disabled) prevBtn.click();
   if (evt.key === 'ArrowRight' && !nextBtn.disabled) nextBtn.click();
 });
 
-[prevBtn, nextBtn].forEach((button, index)  => {
+[prevBtn, nextBtn].forEach((button, index) => {
   button.addEventListener('focus', () => button.classList.add('focused'));
   button.addEventListener('blur', () => button.classList.remove('focused'));
 
-  button.addEventListener('keydown', (evt) => {
+  button.addEventListener('keydown', evt => {
     if (evt.key === ' ' || evt.key === 'Enter') {
       evt.preventDefault();
       index === 0 ? swiper.slidePrev() : swiper.slideNext();

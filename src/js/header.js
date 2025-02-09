@@ -1,5 +1,3 @@
-// <!-- section HEADER responsible Yurii Nabasov -->
-
 document.addEventListener('DOMContentLoaded', function () {
   const dropbtn = document.querySelector('.dropbtn');
   const dropdownContent = document.querySelector('.dropdown-content');
@@ -40,5 +38,3 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-
-// <!-- section /HEADER responsible Yurii Nabasov -->

@@ -1,5 +1,3 @@
-// <!-- section MENU responsible Yurii Nabasov -->
-
 (() => {
   const openModalBtn = document.querySelector('[data-menu-open]');
   const modal = document.querySelector('[data-menu]');
@@ -48,5 +46,3 @@
     }
   });
 })();
-
-// <!-- section /MENU responsible Yurii Nabasov -->

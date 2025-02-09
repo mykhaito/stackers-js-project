@@ -1,6 +1,3 @@
-/* <!-- section HEADER responsible Yurii Nabasov --> */
-/* Mobile first design */
-
 .logo-img {
   border-radius: 18px;
   width: 80px;
@@ -108,4 +105,3 @@
 /* --/HEADER TABLET-- */
 @media screen and (min-width: 1440px) {
 }
-/* --/HEADER DESKTOP & section HAEDER-- */

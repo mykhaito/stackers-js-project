@@ -1,10 +1,8 @@
-/* <!-- section COVERS responsible Yurii Nabasov --> */
 /* Mobile first design */
-
 /* Додаємо фонову картинку */
 .covers-section {
   background-color: #1c1d20;
-  background-image: url(../img/covers_background/background-covers_1x.webp);
+  background-image: url(/img/covers_background/background-covers_1x.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -78,7 +76,7 @@
 
 @media screen and (min-resolution: 192dpi) {
   .covers-section {
-    background-image: url(../img/covers_background/background-covers_2x.webp);
+    background-image: url(/img/covers_background/background-covers_2x.webp);
   }
 }
 
@@ -104,4 +102,3 @@
     max-width: 1440px;
   }
 }
-/* --/COVERS DESKTOP & section COVERS-- */

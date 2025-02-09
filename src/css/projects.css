@@ -21,9 +21,6 @@
     border-radius: 24px;
     display: flex;
     flex-direction: column;
-    max-height: 812px;
-    transition: all 250ms ease-in-out, 
-                opasity 250s ease-in-out; 
      overflow: hidden;           
 }
 .projects-box {
@@ -93,52 +90,40 @@
     gap: 14px;
     justify-content: center;
 }
-.projects-btn {
-    border: 1px solid rgba(250, 250, 250, 0.2);
-    border-radius: 60px;
-    background-color: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px;
-    width: 52px;
-    height: 52px;
-    transition: all 250ms ease-in-out;
+.projects-btn-prev,
+.projects-btn-next {
+  background: var(--background-color);
+  fill: var(--background-color);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
 }
-.projects-btn:hover {
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    background-color: #613434;
-    fill: #613434;
-    transform: scale(1.05);
+
+.projects-btn-prev.swiper-button-disabled,
+.projects-btn-next.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
-.projects-btn:active {
-    background-color: #e0373f;
-    fill: #e0373f;
-    transform: scale(1.1);
-    border: 1px solid rgba(250, 250, 250, 0.7);
-} 
+
+.projects-btn-prev:hover .icon-arrow-left,
+.projects-btn-next:hover .icon-arrow-right {
+  fill: var(--button-text-color);
+}
+
 .swiper-button-left.disabled,
 .swiper-button-right.disabled {
     opacity: 0.5;
     pointer-events: none;
-    border: 1px solid rgba(250, 250, 250, 0.2);
     cursor: not-allowed;
 }
-.projects-btn-icon {
-    stroke: #3B3B3B;
-    transition: stroke 250ms ease-in-out;
-}
-.projects-btn-icon:active {
-    stroke: var(--main-text-color);
-}
+
 
 @media screen and (min-width: 768px) {
     .projects-container {
         padding: 0 32px;
     }
-    /* .projects-card {
-        max-height: 1191px;
-    } */
+
     .projects-box {
         padding: 64px;
         min-height: 566px;
@@ -167,11 +152,7 @@
         margin-top: 64px;
         gap: 20px;
     }
-    .projects-btn {
-        padding: 18px;
-        width: 68px;
-        height: 68px;
-    } 
+
 }
 
 @media screen and (min-width: 1440px) {

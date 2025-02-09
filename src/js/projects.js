@@ -2,8 +2,8 @@
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
 
-const prevBtn = document.querySelector('.swiper-button-left');
-const nextBtn = document.querySelector('.swiper-button-right');
+const prevBtn = document.querySelector('.projects-btn-prev');
+const nextBtn = document.querySelector('.projects-btn-next');
 const swiperContainer = document.querySelector('.swiper-projects-js');
 
 const swiper = new Swiper(swiperContainer, {

@@ -1,6 +1,6 @@
 import Accordion from 'accordion-js';
 
-new Accordion('.accordion-container', {
-  duration: 400,
+new Accordion('.faq-list', {
+  duration: 500,
   showMultiple: false,
 });

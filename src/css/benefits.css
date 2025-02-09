@@ -6,6 +6,11 @@
   flex-direction: column;
 }
 
+.section-benefits-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .section-name {
   font-weight: 600;
   font-size: 16px;
@@ -104,11 +109,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .section-benefits {
+  .section-benefits-container {
     gap: 412px;
     flex-direction: row;
   }
-
   .section-name {
     flex-grow: 1;
   }

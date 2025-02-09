@@ -52,8 +52,6 @@
   z-index: 999;
   top: 32px;
   right: 16px;
-  width: 28px;
-  height: 28px;
   background: none;
   border: none;
   cursor: pointer;
@@ -63,8 +61,8 @@
 }
 
 .mobile-menu-close-btn-icon {
-  width: 14px;
-  height: 14px;
+  width: 28px;
+  height: 28px;
 }
 
 .mobile-nav-link {
@@ -85,11 +83,10 @@
 
 .mobile-order-button {
   position: absolute;
-  bottom: 32px;
+  bottom: 64px;
   left: 50%;
   transform: translateX(-50%);
-  width: 164px;
-  height: 45px;
+  padding: 14px 31px;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;

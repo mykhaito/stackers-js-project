@@ -8,10 +8,7 @@
   z-index: 999;
   width: 100vw;
   height: 100vh;
-  background-image: image-set(
-    url('/img/hero_webp/hero_colors_1_1x.webp') 1x,
-    url('/img/hero_webp/hero_colors_1_2x.webp') 2x
-  );
+  background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
   background-size: cover;
   background-position: center;
   align-items: center;
@@ -22,6 +19,12 @@
   transition: transform 300ms ease, opacity 300ms ease, visibility 300ms ease;
   opacity: 0;
   visibility: hidden;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url('/img/hero_webp/hero_colors_1_2x.webp');
+  }
 }
 
 .mobile-menu.is-open {

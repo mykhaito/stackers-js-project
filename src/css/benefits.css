@@ -115,6 +115,7 @@
   }
   .section-name {
     flex-grow: 1;
+    margin-bottom: 0px;
   }
   .benefits-cards {
     flex-grow: 1;

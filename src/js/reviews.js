@@ -40,7 +40,7 @@ const reviewsData = [
   },
   {
     name: 'Ivetta',
-    text: 'Thanks for the excellent work on the project! His talent and professionalism deserve recognition. I recommend it to everyone who is looking for an expert in the field of software development.',
+    text: 'Thanks for the excellent work on the project! His talent deserve recognition. I recommend it to everyone who is looking for an expert in the field of software development.',
     avatar: {
       x1: avatar4,
       x2: avatar4_2x,
@@ -72,7 +72,7 @@ const reviewsData = [
   },
   {
     name: 'Tetiana',
-    text: 'Thanks for the excellent work on the project! His talent and professionalism deserve recognition. I recommend it to everyone who is looking for an expert in the field of software development.',
+    text: 'Thanks for the excellent work on the project! His talent deserve recognition. I recommend it to everyone who is looking for an expert in the field of software development.',
     avatar: {
       x1: avatar4,
       x2: avatar4_2x,

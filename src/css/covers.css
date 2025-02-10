@@ -6,7 +6,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 375px;
+  /* max-width: 375px; */
   max-height: 508px;
   /* height: 100vw;*/
   margin-left: auto;
@@ -83,7 +83,7 @@
 /* --COVERS TABLET-- */
 @media screen and (min-width: 768px) {
   .covers-section {
-    max-width: 768px;
+    /* max-width: 768px; */
     height: auto;
     max-height: 960px;
   }
@@ -99,6 +99,6 @@
 
 @media screen and (min-width: 1440px) {
   .covers-section {
-    max-width: 1440px;
+    /* max-width: 1440px; */
   }
 }

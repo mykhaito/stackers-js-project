@@ -19,28 +19,19 @@
 }
 
 .reviews-item {
-  background: var(--cards-color);
+  background: var(--background-color);
   border-radius: 16px;
   padding: 32px 24px;
-  position: relative;
-  min-height: 302px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
 }
 
 .reviews-avatar {
-  position: absolute;
-  top: 32px;
-  left: 24px;
   width: 48px;
   height: 48px;
   border-radius: 50%;
   object-fit: cover;
-}
-
-.reviews-content {
-  position: absolute;
-  bottom: 32px;
-  left: 24px;
-  right: 24px;
+  margin-bottom: 32px;
 }
 
 .reviews-name {
@@ -86,7 +77,6 @@
   cursor: not-allowed;
 }
 
-/* Error message */
 .reviews-error {
   text-align: center;
   padding: 40px;
@@ -115,16 +105,10 @@
 @media (min-width: 768px) {
   .reviews-item {
     padding: 32px;
-    min-height: 350px;
-  }
-
-  .reviews-avatar {
-    left: 32px;
   }
 }
 
 @media (min-width: 1440px) {
   .reviews-item {
-    min-height: 400px;
   }
 }

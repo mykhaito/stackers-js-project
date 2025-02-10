@@ -2,13 +2,13 @@
   border-radius: 18px;
   width: 80px;
   height: 80px;
-  margin-right: 8px;
 }
 
 .header-logo {
   display: flex;
   outline: none;
   transition: transform 300ms ease-in-out;
+  gap: 8px;
 }
 
 .header-logo:hover,
@@ -66,7 +66,7 @@
   width: 100%;
   z-index: 10;
   background-color: transparent;
-  margin-top: 32px;
+  padding-top: 32px;
 }
 
 .mobile-open-btn {

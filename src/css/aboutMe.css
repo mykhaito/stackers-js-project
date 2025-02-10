@@ -425,8 +425,8 @@
     width: 1200px;
   }
   .my-skills-swiper-subsection {
-    margin-left: 32px;
-    margin-right: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 /* ======== /swiper ======== */

@@ -5,7 +5,8 @@
   padding-right: 16px;
   max-width: 100%;
   background-image: url('/img/work_together/background-mobile.png');
-  background-position: 290px 0;
+  background-size: 40%;
+  background-position: 210px 0;
   background-repeat: no-repeat;
 }
 .footer-head {
@@ -48,6 +49,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   outline: none;
+  width: 311px;
 }
 .footer-input::placeholder {
   font-weight: 500;
@@ -81,7 +83,7 @@
   display: flex;
   gap: 4px;
   margin-top: 64px;
-  width: 300px;
+  /* width: 300px; */
 }
 .footer-contacts-address {
   border: 1px solid rgba(250, 250, 250, 0.2);
@@ -179,6 +181,40 @@ body.modal-open {
   overflow: hidden;
 }
 
+.input-wrapper {
+  position: relative;
+  width: auto;
+}
+
+.validation-message {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: -0.02em;
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  display: none;
+}
+
+.footer-input.valid {
+  border-bottom-color: #3cbc81;
+}
+
+.footer-input.invalid {
+  border-bottom-color: #e74a3b;
+}
+
+.validation-message.valid {
+  color: #3cbc81;
+  display: block;
+}
+
+.validation-message.invalid {
+  color: #e74a3b;
+  display: block;
+}
+
 @media only screen and (max-width: 375px) {
   .footer-contacts {
     flex-wrap: wrap;
@@ -189,10 +225,9 @@ body.modal-open {
   .footer-section {
     padding-left: 32px;
     padding-right: 32px;
-    padding-top: 80px;
-    padding-bottom: 169px;
     background-image: url('/img/work_together/background-tablet-min.png');
-    background-position: 570px 0;
+    background-size: 70%;
+    background-position: 400px 0;
   }
   .footer-section-one {
     gap: 20px;
@@ -240,10 +275,12 @@ body.modal-open {
 }
 @media only screen and (min-width: 1440px) {
   .footer-section {
+    margin-bottom: 89px;
     padding-left: 196px;
     padding-right: 196px;
     background-image: url('/img/work_together/background-laptop.png');
-    background-position: 1040px 0;
+    background-size: 80%;
+    background-position: 580px 0;
   }
   .footer-input {
     width: 390px;

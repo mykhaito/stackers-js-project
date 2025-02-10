@@ -68,6 +68,7 @@
   right: 0;
   background-color: transparent;
   transition: background-color 300ms ease;
+  flex-shrink: 0;
 }
 
 .faq-ac-icon {
@@ -95,6 +96,21 @@
 
 .ac.is-active .faq-ac-icon {
   transform: rotateX(180deg);
+}
+
+.ac-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+}
+
+.faq-last-desc {
+  display: block;
+  max-width: calc(100% - 50px);
+  min-width: 0;
+  word-break: break-word;
 }
 
 @media only screen and (min-width: 768px) {

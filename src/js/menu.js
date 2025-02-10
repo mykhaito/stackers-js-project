@@ -6,7 +6,8 @@
   const orderButton = document.querySelector('.mobile-order-button');
 
   openModalBtn.addEventListener('click', () => {
-    modal.style.transition = 'transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease';
+    modal.style.transition =
+      'transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease';
     modal.classList.add('is-open');
     document.body.classList.add('menu-open');
   });

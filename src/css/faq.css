@@ -74,10 +74,10 @@
   fill: transparent;
   transition: transform 500ms ease-in-out, fill 300ms ease;
 }
-.faq-ac-icon-wrapper:hover{
+.faq-ac-icon-wrapper:hover {
   background-color: var(--button-text-color);
 }
-.ac-trigger:focus .faq-ac-icon-wrapper{
+.ac-trigger:focus .faq-ac-icon-wrapper {
   background-color: var(--button-text-color);
 }
 

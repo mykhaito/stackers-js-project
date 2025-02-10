@@ -2,7 +2,6 @@ import './js/header.js';
 import './js/menu.js';
 import './js/hero.js';
 import './js/aboutMe.js';
-import './js/benefits.js';
 import './js/projects.js';
 import './js/faq.js';
 import './js/covers.js';

@@ -205,7 +205,7 @@
   /* transform: rotate(180deg); */
 }
 
-.about-me-ac-icon-wrapper:hover{
+.about-me-ac-icon-wrapper:hover {
   background-color: var(--button-text-color);
 }
 .ac-trigger:focus .about-me-ac-icon-wrapper {
@@ -216,11 +216,11 @@
   fill: var(--button-text-color);
 }
 
-.ac.is-active .ac-trigger:focus .about-me-ac-icon-wrapper  {
+.ac.is-active .ac-trigger:focus .about-me-ac-icon-wrapper {
   background-color: var(--button-text-color);
 }
 
-.ac.is-active .ac-trigger:focus .about-me-ac-icon-wrapper  {
+.ac.is-active .ac-trigger:focus .about-me-ac-icon-wrapper {
   fill: var(--button-text-color);
 }
 

@@ -1,11 +1,9 @@
 'use strict';
-import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules';
+import Swiper from 'swiper/bundle';
 
 const swiperContainer = document.querySelector('.swiper-projects-js');
 
 const swiper = new Swiper(swiperContainer, {
-  modules: [Navigation, Keyboard],
   direction: 'horizontal',
   spaceBetween: 50,
   slidesPerView: 1,

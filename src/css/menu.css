@@ -43,11 +43,6 @@
   text-align: center;
 }
 
-.mobile-nav-item:hover .mobile-nav-link,
-.mobile-nav-item:focus-within .mobile-nav-link {
-  color: var(--button-text-color);
-}
-
 .mobile-menu-close-btn {
   position: absolute;
   z-index: 999;
@@ -72,14 +67,33 @@
   letter-spacing: -0.02em;
   text-decoration: underline;
   text-decoration-skip-ink: none;
+  outline: none;
 }
 
 .mobile-nav-item {
   margin-bottom: 12px;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .mobile-nav-item:last-child {
   margin-bottom: 0;
+}
+
+.mobile-nav-item:hover .mobile-nav-link,
+.mobile-nav-item:focus-within .mobile-nav-link {
+  color: var(--button-text-color);
+  transform: scale(1.2);
+}
+
+.mobile-nav-item:active .mobile-nav-link {
+  color: var(--main-text-color);
+}
+.mobile-nav-item:hover,
+.mobile-nav-item:focus-within {
+  transform: scale(1.2);
+}
+.mobile-nav-item:active {
+  transform: scale(1);
 }
 
 .mobile-order-button {

@@ -9,10 +9,56 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       dropdownContent.style.display = 'grid';
     }
+    dropbtn.classList.remove('hovered');
+  });
+
+  dropbtn.addEventListener('mouseover', function () {
+    dropbtn.style.color = 'var(--button-text-color)';
+    dropbtn.style.transform = 'scale(1.2)';
+  });
+
+  dropbtn.addEventListener('mouseout', function () {
+    dropbtn.style.color = 'var(--main-text-color)';
+    dropbtn.style.transform = 'scale(1)';
+  });
+
+  dropbtn.addEventListener('focus', function () {
+    dropbtn.style.color = 'var(--button-text-color)';
+    dropbtn.style.transform = 'scale(1.2)';
+  });
+
+  dropbtn.addEventListener('blur', function () {
+    dropbtn.style.color = 'var(--main-text-color)';
+    dropbtn.style.transform = 'scale(1)';
+  });
+
+  dropbtn.addEventListener('click', function () {
+    dropbtn.style.color = 'var(--main-text-color)';
+    dropbtn.style.transform = 'scale(1)';
   });
 
   const dropdownLinks = dropdownContent.querySelectorAll('a');
   dropdownLinks.forEach(function (link) {
+    link.addEventListener('mouseover', function () {
+      link.style.color = 'var(--button-text-color)';
+      link.parentElement.style.transform = 'scale(1.2)';
+    });
+
+    link.addEventListener('mouseout', function () {
+      link.style.color = 'var(--main-text-color)';
+      link.parentElement.style.transform = 'scale(1)';
+    });
+
+    link.addEventListener('focus', function () {
+      link.style.color = 'var(--button-text-color)';
+      link.parentElement.style.transform = 'scale(1.2)';
+    });
+
+    link.addEventListener('blur', function () {
+      link.style.color = 'var(--main-text-color)';
+      link.parentElement.style.transform = 'scale(1)';
+    });
+
     link.addEventListener('click', function (event) {
       event.preventDefault(); // Перехоплюємо поведінку за замовчуванням
       const targetId = this.getAttribute('href').substring(1); // Отримуємо id секції
@@ -21,14 +67,8 @@ document.addEventListener('DOMContentLoaded', function () {
         smoothScrollTo(targetElement);
       }
       dropdownContent.style.display = 'none';
+      link.style.color = '';
     });
-  });
-
-  headerOrderButton.addEventListener('click', function () {
-    const targetElement = document.getElementById('covers'); //<!--Тимчасове посилання на секцію COVERS щоб провірити, потрібно замінити на workTogether-->
-    if (targetElement) {
-      smoothScrollTo(targetElement);
-    }
   });
 
   function smoothScrollTo(element) {
@@ -37,4 +77,11 @@ document.addEventListener('DOMContentLoaded', function () {
       behavior: 'smooth',
     });
   }
+
+  headerOrderButton.addEventListener('click', function () {
+    const targetElement = document.getElementById('workTogether');
+    if (targetElement) {
+      smoothScrollTo(targetElement);
+    }
+  });
 });

@@ -7,6 +7,13 @@
 
 .header-logo {
   display: flex;
+  outline: none;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  transform: scale(1.1);
 }
 
 .page-header-container {
@@ -26,6 +33,7 @@
 
 .dropbtn {
   font-weight: 500;
+  outline: none;
   font-size: 16px;
   letter-spacing: -0.02em;
   text-decoration: underline;
@@ -37,6 +45,18 @@
   padding: 10px;
   width: 60px;
   height: 39px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  transform: scale(1.2);
+  color: var(--button-text-color);
+}
+
+.dropbtn:active {
+  transform: scale(1);
+  color: inherit;
 }
 
 .page-header {
@@ -63,10 +83,6 @@
 
 .header-order-button {
   display: none;
-}
-
-.mobile-order-link{
-  outline: none;
 }
 
 /* --HEADER TABLET-- */
@@ -98,11 +114,17 @@
     padding: 18px 24px;
     background: var(--button-text-color);
     border: none;
+    outline: none;
+    transition: transform 0.3s ease;
   }
 
-  .mobile-order-button:hover,
-  .mobile-order-button:focus {
-    background-color: #e0373f;
+  .header-order-button:hover,
+  .header-order-button:focus {
+    transform: scale(1.2);
+  }
+
+  .header-order-button:active {
+    transform: scale(1);
   }
 }
 

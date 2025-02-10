@@ -83,11 +83,12 @@
   border-radius: 60px;
   width: 187px;
   height: 55px;
+  outline: none;
 }
 .button-click:hover,
 .button-click:focus {
   background-color: var(--button-text-color);
-  color: #121212;
+  color: var(--main-text-color);
 }
 
 @media (min-width: 375px) and (max-width: 767px) {

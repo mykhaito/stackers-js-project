@@ -106,7 +106,9 @@
 }
 
 .reviews-button-prev:hover .icon-arrow-left,
-.reviews-button-next:hover .icon-arrow-right {
+.reviews-button-next:hover .icon-arrow-right,
+.reviews-button-prev:focus .icon-arrow-left,
+.reviews-button-next:focus .icon-arrow-right {
   fill: var(--button-text-color);
 }
 

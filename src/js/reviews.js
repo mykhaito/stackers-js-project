@@ -1,5 +1,4 @@
 import Swiper from 'swiper/bundle';
-import { Keyboard } from 'swiper/modules';
 
 
 const avatar1 = new URL('../img/reviews/avatar-1.jpg', import.meta.url).href;

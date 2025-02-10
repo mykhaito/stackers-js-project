@@ -11,6 +11,7 @@ const validationMessage = document.querySelector('.validation-message');
 const closeModal = () => {
   modalWindow.classList.remove('is-open');
   document.body.classList.remove('modal-open');
+  document.removeEventListener('keydown', handleEscapeKey);
 };
 
 const validateEmail = () => {
@@ -50,6 +51,7 @@ const formSubmit = async event => {
     if (response.status === 201) {
       modalWindow.classList.add('is-open');
       document.body.classList.add('modal-open');
+      document.addEventListener('keydown', handleEscapeKey);
       pageForm.reset();
       emailInput.classList.remove('valid');
       validationMessage.classList.remove('valid');
@@ -76,9 +78,8 @@ modalWindow.addEventListener('click', event => {
     closeModal();
   }
 });
-
-document.addEventListener('keydown', event => {
-  if (event.key === 'Escape' && modalWindow.classList.contains('is-open')) {
+const handleEscapeKey = event => {
+  if (event.key === 'Escape') {
     closeModal();
   }
-});
+};

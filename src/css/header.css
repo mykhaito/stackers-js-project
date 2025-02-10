@@ -75,6 +75,12 @@
   background-color: transparent;
   padding: 0;
   stroke: white;
+  transition: transform 300ms ease, color 300ms ease;
+}
+
+.mobile-open-btn:hover,
+.mobile-open-btn:focus {
+  transform: scale(1.2);
 }
 
 .mobile-btn-icon {

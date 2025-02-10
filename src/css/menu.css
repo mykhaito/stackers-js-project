@@ -2,12 +2,12 @@
 /* Mobile first design */
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
-  width: 0;
-  height: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: image-set(
     url('/img/hero_webp/hero_colors_1_1x.webp') 1x,
     url('/img/hero_webp/hero_colors_1_2x.webp') 2x
@@ -17,13 +17,11 @@
   align-items: center;
   justify-content: center;
   color: var(--main-text);
-  overflow-y: auto;
+  overflow: hidden; /* Забороняємо скрол всередині меню */
   transform: translateX(100%);
   transition: transform 300ms ease, opacity 300ms ease, visibility 300ms ease;
   opacity: 0;
   visibility: hidden;
-  max-width: 100vw;
-  overflow: hidden;
 }
 
 .mobile-menu.is-open {
@@ -31,12 +29,13 @@
   display: flex;
   opacity: 1;
   visibility: visible;
-  width: 100vw;
-  height: 100vh;
 }
 
 body.menu-open {
-  overflow: hidden;
+  overflow: hidden; /* Забороняємо скрол сторінки */
+  touch-action: none; /* Забороняємо скрол на мобільних пристроях */
+  position: fixed;
+  width: 100%;
 }
 
 .mobile-menu-container {
@@ -64,6 +63,12 @@ body.menu-open {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: transform 300ms ease, color 300ms ease;
+}
+
+.mobile-menu-close-btn:hover,
+.mobile-menu-close-btn:focus {
+  transform: scale(1.2);
 }
 
 .mobile-menu-close-btn-icon {

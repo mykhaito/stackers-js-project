@@ -22,7 +22,7 @@
 }
 
 @media (min-resolution: 2dppx) {
-  .hero-section {
+  .mobile-menu {
     background-image: url('/img/hero_webp/hero_colors_1_2x.webp');
   }
 }

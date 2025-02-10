@@ -8,10 +8,12 @@
   openModalBtn.addEventListener('click', () => {
     modal.style.transition = 'transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease';
     modal.classList.add('is-open');
+    document.body.classList.add('menu-open');
   });
 
   closeModalBtn.addEventListener('click', () => {
     modal.classList.remove('is-open');
+    document.body.classList.remove('menu-open');
   });
 
   navLinks.forEach(link => {
@@ -23,6 +25,7 @@
         smoothScrollTo(targetElement);
       }
       modal.classList.remove('is-open');
+      document.body.classList.remove('menu-open');
     });
   });
 
@@ -32,6 +35,7 @@
       smoothScrollTo(targetElement);
     }
     modal.classList.remove('is-open');
+    document.body.classList.remove('menu-open');
   });
 
   function smoothScrollTo(element) {
@@ -44,6 +48,7 @@
   document.addEventListener('click', event => {
     if (event.target === modal) {
       modal.classList.remove('is-open');
+      document.body.classList.remove('menu-open');
     }
   });
 })();

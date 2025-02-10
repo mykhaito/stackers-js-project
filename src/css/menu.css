@@ -6,8 +6,8 @@
   top: 0;
   left: 0;
   z-index: 999;
-  width: 100vw;
-  height: 100vh;
+  width: 0;
+  height: 0;
   background-image: image-set(
     url('/img/hero_webp/hero_colors_1_1x.webp') 1x,
     url('/img/hero_webp/hero_colors_1_2x.webp') 2x
@@ -22,6 +22,8 @@
   transition: transform 300ms ease, opacity 300ms ease, visibility 300ms ease;
   opacity: 0;
   visibility: hidden;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .mobile-menu.is-open {
@@ -29,6 +31,12 @@
   display: flex;
   opacity: 1;
   visibility: visible;
+  width: 100vw;
+  height: 100vh; 
+}
+
+body.menu-open {
+  overflow: hidden;
 }
 
 .mobile-menu-container {

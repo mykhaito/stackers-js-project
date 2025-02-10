@@ -49,7 +49,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   outline: none;
-  width: 311px;
+  width: 270px;
 }
 .footer-input::placeholder {
   font-weight: 500;
@@ -223,6 +223,7 @@ body.modal-open {
 }
 @media only screen and (min-width: 768px) {
   .footer-section {
+    margin-bottom: 87px;
     padding-left: 32px;
     padding-right: 32px;
     background-image: url('/img/work_together/background-tablet-min.png');
@@ -275,7 +276,6 @@ body.modal-open {
 }
 @media only screen and (min-width: 1440px) {
   .footer-section {
-    margin-bottom: 89px;
     padding-left: 196px;
     padding-right: 196px;
     background-image: url('/img/work_together/background-laptop.png');

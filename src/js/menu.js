@@ -4,17 +4,23 @@
   const closeModalBtn = document.querySelector('[data-menu-close]');
   const navLinks = document.querySelectorAll('.mobile-nav-link');
   const orderButton = document.querySelector('.mobile-order-button');
+  let scrollPosition = 0;
 
   openModalBtn.addEventListener('click', () => {
+    scrollPosition =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    document.body.style.top = `-${scrollPosition}px`;
+    document.body.classList.add('menu-open');
     modal.style.transition =
       'transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease';
     modal.classList.add('is-open');
-    document.body.classList.add('menu-open');
   });
 
   closeModalBtn.addEventListener('click', () => {
     modal.classList.remove('is-open');
     document.body.classList.remove('menu-open');
+    document.body.style.top = '';
+    window.scrollTo(0, scrollPosition);
   });
 
   navLinks.forEach(link => {
@@ -23,20 +29,26 @@
       const targetId = link.getAttribute('href').substring(1); // Отримуємо id секції
       const targetElement = document.getElementById(targetId);
       if (targetElement) {
-        smoothScrollTo(targetElement);
+        modal.classList.remove('is-open');
+        document.body.classList.remove('menu-open');
+        document.body.style.top = '';
+        setTimeout(() => {
+          smoothScrollTo(targetElement);
+        }, 300);
       }
-      modal.classList.remove('is-open');
-      document.body.classList.remove('menu-open');
     });
   });
 
   orderButton.addEventListener('click', () => {
     const targetElement = document.getElementById('workTogether');
     if (targetElement) {
-      smoothScrollTo(targetElement);
+      modal.classList.remove('is-open');
+      document.body.classList.remove('menu-open');
+      document.body.style.top = '';
+      setTimeout(() => {
+        smoothScrollTo(targetElement);
+      }, 300);
     }
-    modal.classList.remove('is-open');
-    document.body.classList.remove('menu-open');
   });
 
   function smoothScrollTo(element) {
@@ -50,6 +62,8 @@
     if (event.target === modal) {
       modal.classList.remove('is-open');
       document.body.classList.remove('menu-open');
+      document.body.style.top = '';
+      window.scrollTo(0, scrollPosition);
     }
   });
 })();

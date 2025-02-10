@@ -180,6 +180,9 @@
 
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 50%;
+  fill: transparent;
+  background-color: transparent;
+  transition: background-color 300ms ease, fill 300ms ease;
 }
 .about-me-ac-icon {
   width: 18px;
@@ -200,6 +203,25 @@
   transform: rotateX(180deg);
   /* transform: rotate(-180deg); */
   /* transform: rotate(180deg); */
+}
+
+.about-me-ac-icon-wrapper:hover{
+  background-color: var(--button-text-color);
+}
+.ac-trigger:focus .about-me-ac-icon-wrapper {
+  background-color: var(--button-text-color);
+}
+
+.ac-trigger:focus .about-me-ac-icon-wrapper {
+  fill: var(--button-text-color);
+}
+
+.ac.is-active .ac-trigger:focus .about-me-ac-icon-wrapper  {
+  background-color: var(--button-text-color);
+}
+
+.ac.is-active .ac-trigger:focus .about-me-ac-icon-wrapper  {
+  fill: var(--button-text-color);
 }
 
 .my-styles-ac-text {

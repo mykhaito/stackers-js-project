@@ -1,12 +1,14 @@
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+
 const pageForm = document.querySelector('.footer-form');
 const modalWindow = document.querySelector('.modal-window-backdrop');
 const closeModalBtn = document.querySelector('.footer-modal-close-btn');
 
 const closeModal = () => {
   modalWindow.classList.remove('is-open');
+  document.body.classList.remove('modal-open');
 };
 const formSubmit = async event => {
   try {
@@ -22,6 +24,7 @@ const formSubmit = async event => {
     );
     if (response.status === 201) {
       modalWindow.classList.add('is-open');
+      document.body.classList.add('modal-open');
       pageForm.reset();
     }
   } catch (error) {

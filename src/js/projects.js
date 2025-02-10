@@ -18,3 +18,16 @@ const swiper = new Swiper(swiperContainer, {
     onlyInViewport: false,
   },
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const prevButton = document.querySelector('.projects-btn-prev');
+  const nextButton = document.querySelector('.projects-btn-next');
+
+  [prevButton, nextButton].forEach(button => {
+    button.addEventListener('mousedown', function () {
+      setTimeout(() => {
+        this.blur();
+      }, 1000);
+    });
+  });
+});

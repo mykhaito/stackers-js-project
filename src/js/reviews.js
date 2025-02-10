@@ -147,6 +147,17 @@ document.addEventListener('DOMContentLoaded', () => {
   renderReviews();
   initSwiper();
 
+  const prevButton = document.querySelector('.reviews-button-prev');
+  const nextButton = document.querySelector('.reviews-button-next');
+
+  [prevButton, nextButton].forEach(button => {
+    button.addEventListener('mousedown', function () {
+      setTimeout(() => {
+        this.blur();
+      }, 1000);
+    });
+  });
+
   const nav = document.querySelector('.reviews-nav');
   if (nav) nav.style.display = 'flex';
 });

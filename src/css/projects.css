@@ -98,7 +98,7 @@
   outline: none;
   padding: 0;
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  transition: opacity 300ms ease, fill 300ms ease;
 }
 
 .projects-btn-prev.swiper-button-disabled,
@@ -107,10 +107,10 @@
   cursor: not-allowed;
 }
 
-.projects-btn-prev:hover .projects-btn-icon,
-.projects-btn-next:hover .projects-btn-icon,
-.projects-btn-prev:focus .projects-btn-icon,
-.projects-btn-next:focus .projects-btn-icon {
+.projects-btn-prev:hover,
+.projects-btn-next:hover,
+.projects-btn-prev:focus,
+.projects-btn-next:focus {
   fill: var(--button-text-color);
 }
 

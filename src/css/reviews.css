@@ -77,7 +77,7 @@
   border: none;
   padding: 0;
   cursor: pointer;
-  transition: opacity 0.3s ease;
+  transition: opacity 300ms ease;
 }
 
 .reviews-button-prev.swiper-button-disabled,
@@ -102,7 +102,7 @@
 .icon-arrow-left,
 .icon-arrow-right {
   fill: transparent;
-  transition: fill 0.3s ease;
+  transition: fill 300ms ease;
 }
 
 .reviews-button-prev:hover .icon-arrow-left,

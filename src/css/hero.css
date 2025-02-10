@@ -41,7 +41,7 @@
 }
 .hero-social-links {
   width: 37px;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 300ms ease-in-out;
   outline: none;
 }
 .hero-social-email {

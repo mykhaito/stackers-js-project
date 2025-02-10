@@ -8,7 +8,7 @@
 .header-logo {
   display: flex;
   outline: none;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 300ms ease-in-out;
 }
 
 .header-logo:hover,
@@ -45,7 +45,7 @@
   padding: 10px;
   width: 60px;
   height: 39px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 300ms ease, color 300ms ease;
 }
 
 .dropbtn:hover,
@@ -115,7 +115,7 @@
     background: var(--button-text-color);
     border: none;
     outline: none;
-    transition: transform 0.3s ease;
+    transition: transform 300ms ease;
   }
 
   .header-order-button:hover,

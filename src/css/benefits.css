@@ -1,5 +1,4 @@
 .section-benefits {
-  padding: 16px;
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
@@ -41,7 +40,7 @@
 .benefits-item {
   border-radius: 20px;
   padding: 24px;
-  min-width: 320px;
+  /* min-width: 320px; */
   height: 270px;
 
   background: var(--cards-color);
@@ -72,7 +71,7 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: var(--main-text-color);
-  transition: background-color 0.3s ease;
+  transition: background-color 300ms ease;
   display: flex;
   align-items: center;
   justify-content: center;

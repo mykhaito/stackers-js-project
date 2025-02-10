@@ -8,25 +8,27 @@
   z-index: 999;
   width: 100vw;
   height: 100vh;
-
   background-image: image-set(
     url('/img/hero_webp/hero_colors_1_1x.webp') 1x,
     url('/img/hero_webp/hero_colors_1_2x.webp') 2x
   );
   background-size: cover;
   background-position: center;
-  display: none;
   align-items: center;
   justify-content: center;
   color: var(--main-text);
   overflow-y: auto;
   transform: translateX(100%);
-  transition: transform 0.3s ease;
+  transition: transform 300ms ease, opacity 300ms ease, visibility 300ms ease;
+  opacity: 0;
+  visibility: hidden;
 }
 
 .mobile-menu.is-open {
   transform: translateX(0);
   display: flex;
+  opacity: 1;
+  visibility: visible;
 }
 
 .mobile-menu-container {
@@ -72,7 +74,7 @@
 
 .mobile-nav-item {
   margin-bottom: 12px;
-  transition: transform 0.3s ease, color 0.3s ease;
+  transition: transform 300ms ease, color 300ms ease;
 }
 
 .mobile-nav-item:last-child {

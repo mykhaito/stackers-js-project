@@ -1,12 +1,14 @@
 .hero-section {
-  background-image: image-set(
-    url('/img/hero_webp/hero_colors_1_1x.webp') 1x,
-    url('/img/hero_webp/hero_colors_1_2x.webp') 2x
-  );
-
+  background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero-section {
+    background-image: url('/img/hero_webp/hero_colors_1_2x.webp');
+  }
 }
 
 .hero-container {

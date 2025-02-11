@@ -1,8 +1,10 @@
 'use strict';
 import Swiper from 'swiper/bundle';
+
 const swiperContainer = document.querySelector('.swiper-projects-js');
 
-const swiper = new Swiper(swiperContainer, {  
+const swiper = new Swiper(swiperContainer, {
+  direction: 'horizontal',
   spaceBetween: 50,
   slidesPerView: 1,
   loop: false,
@@ -15,7 +17,7 @@ const swiper = new Swiper(swiperContainer, {
     enabled: true,
     onlyInViewport: false,
   },
-  touchEventsTarget: 'wrapper',  
+  touchEventsTarget: 'wrapper',
   simulateTouch: true,
 });
 
@@ -43,5 +45,11 @@ document.addEventListener('DOMContentLoaded', () => {
         this.blur();
       }, 1000);
     });
+  });
+});
+=======
+  button.addEventListener('touchstart', (evt) => {   
+    evt.preventDefault();
+    index === 0 ? swiper.slidePrev() : swiper.slideNext();
   });
 });

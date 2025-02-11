@@ -1,3 +1,6 @@
+.page-footer .container {
+  padding-top: 32px;
+}
 .page-footer {
   background-image: url('/img/work_together/background-mobile.png');
   background-position: 290px center;
@@ -223,6 +226,9 @@ body.modal-open {
   }
 }
 @media only screen and (min-width: 768px) {
+  .page-footer .container {
+    padding-top: 85px;
+  }
   .page-footer {
     background-image: url('/img/work_together/background-tablet-min.png');
     background-position: 570px center;

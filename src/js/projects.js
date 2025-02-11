@@ -21,19 +21,18 @@ const swiper = new Swiper(swiperContainer, {
   simulateTouch: true,
 });
 
-function updateButtonsState(swiper) {
+// function updateButtonsState(swiper) {
+//   prevBtn.disabled = swiper.isBeginning;
+//   nextBtn.disabled = swiper.isEnd;
 
-  prevBtn.disabled = swiper.isBeginning;
-  nextBtn.disabled = swiper.isEnd;
+//   prevBtn.classList.toggle('disabled', swiper.isBeginning);
+//   nextBtn.classList.toggle('disabled', swiper.isEnd);
+// }
 
-  prevBtn.classList.toggle('disabled', swiper.isBeginning);
-  nextBtn.classList.toggle('disabled', swiper.isEnd);
-}
-
-document.addEventListener('keydown', (evt) => {
-  if (evt.key === 'ArrowLeft' && !prevBtn.disabled) prevBtn.click();
-  if (evt.key === 'ArrowRight' && !nextBtn.disabled) nextBtn.click();
-});
+// document.addEventListener('keydown', evt => {
+//   if (evt.key === 'ArrowLeft' && !prevBtn.disabled) prevBtn.click();
+//   if (evt.key === 'ArrowRight' && !nextBtn.disabled) nextBtn.click();
+// });
 
 document.addEventListener('DOMContentLoaded', () => {
   const prevBtn = document.querySelector('.projects-btn-prev');
@@ -47,9 +46,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
-=======
-  button.addEventListener('touchstart', (evt) => {   
-    evt.preventDefault();
-    index === 0 ? swiper.slidePrev() : swiper.slideNext();
-  });
-});
+
+// button.addEventListener('touchstart', evt => {
+//   evt.preventDefault();
+//   index === 0 ? swiper.slidePrev() : swiper.slideNext();
+// });

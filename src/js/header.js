@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
   const dropbtn = document.querySelector('.dropbtn');
   const dropdownContent = document.querySelector('.dropdown-content');
-  const headerOrderButton = document.querySelector('.header-order-button');
+  // const headerOrderButton = document.querySelector('.header-order-button');
 
   dropbtn.addEventListener('click', function () {
     if (dropdownContent.style.display === 'grid') {
@@ -78,10 +78,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  headerOrderButton.addEventListener('click', function () {
-    const targetElement = document.getElementById('workTogether');
-    if (targetElement) {
-      smoothScrollTo(targetElement);
-    }
-  });
+  // headerOrderButton.addEventListener('click', function () {
+  //   const targetElement = document.getElementById('workTogether');
+  //   if (targetElement) {
+  //     smoothScrollTo(targetElement);
+  //   }
+  // });
 });

@@ -1,16 +1,17 @@
 'use strict';
 import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules';
+import { Navigation, Keyboard, HashNavigation, Mousewheel } from 'swiper/modules'; //ось це замінити
 
 const prevBtn = document.querySelector('.swiper-button-left');
 const nextBtn = document.querySelector('.swiper-button-right');
 const swiperContainer = document.querySelector('.swiper-projects-js');
 
 const swiper = new Swiper(swiperContainer, {
-  modules: [Navigation, Keyboard],
-  direction:	'horizontal',
+  modules: [Navigation, Keyboard, HashNavigation, Mousewheel],  // цю строчку замінити 
+  direction: 'horizontal',
   spaceBetween: 50,
-  slidesPerView: 1, 
+  slidesPerView: 1,
+  grabCursor: true,  //додай це
   loop: false,
   speed: 400,
   navigation: {
@@ -18,21 +19,19 @@ const swiper = new Swiper(swiperContainer, {
     prevEl: prevBtn,
   },
   keyboard: {
-    enabled: true, 
+    enabled: true,
     onlyInViewport: false,
   },
-  on: {
-    init: function () {
-      updateButtonsState(this);
-    },
-    slideChange: function () {
-      updateButtonsState(this);
-    },
-    toEdge: function () {
-      updateButtonsState(this);
-    },
+  hashNavigation: {
+    watchState: true, // Додай це
   },
-});  
+  mousewheel: {
+    invert: false, // також це
+  },
+  touchEventsTarget: 'wrapper',  // це також
+  simulateTouch: true,
+  //тут видалила on - не потрібні
+});
 
 function updateButtonsState(swiper) {
   prevBtn.disabled = swiper.isBeginning;
@@ -57,4 +56,11 @@ document.addEventListener('keydown', (evt) => {
       index === 0 ? swiper.slidePrev() : swiper.slideNext();
     }
   });
+//  додай будь-ласка ось цю функцію
+  button.addEventListener('touchstart', (evt) => {   
+    evt.preventDefault();
+    index === 0 ? swiper.slidePrev() : swiper.slideNext();
+  });
 });
+
+// Дякую

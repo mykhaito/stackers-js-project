@@ -1,15 +1,12 @@
 'use strict';
-import Swiper from 'swiper';
-import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+import Swiper from 'swiper/bundle';
 
 const swiperContainer = document.querySelector('.swiper-projects-js');
 
 const swiper = new Swiper(swiperContainer, {
-  modules: [Navigation, Keyboard, Mousewheel],
   direction: 'horizontal',
   spaceBetween: 50,
   slidesPerView: 1,
-  grabCursor: true,
   loop: false,
   speed: 600,
   navigation: {
@@ -20,14 +17,12 @@ const swiper = new Swiper(swiperContainer, {
     enabled: true,
     onlyInViewport: false,
   },
-  mousewheel: {
-    invert: false,
-  },
   touchEventsTarget: 'wrapper',
   simulateTouch: true,
 });
 
 function updateButtonsState(swiper) {
+
   prevBtn.disabled = swiper.isBeginning;
   nextBtn.disabled = swiper.isEnd;
 
@@ -41,16 +36,18 @@ document.addEventListener('keydown', (evt) => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-  const prevButton = document.querySelector('.projects-btn-prev');
-  const nextButton = document.querySelector('.projects-btn-next');
+  const prevBtn = document.querySelector('.projects-btn-prev');
+  const nextBtn = document.querySelector('.projects-btn-next');
 
-  [prevButton, nextButton].forEach(button => {
-    button.addEventListener('mousedown', function () {
+  [prevBtn, nextBtn].forEach(btn => {
+    btn.addEventListener('mousedown', function () {
       setTimeout(() => {
         this.blur();
       }, 1000);
     });
   });
+});
+=======
   button.addEventListener('touchstart', (evt) => {   
     evt.preventDefault();
     index === 0 ? swiper.slidePrev() : swiper.slideNext();

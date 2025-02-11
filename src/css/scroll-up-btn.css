@@ -1,13 +1,13 @@
 .scroll-to-top-btn {
   position: fixed;
-  right: 30px;
+  right: 6%;
   bottom: 30px;
   transform: rotateZ(-90deg);
   z-index: 10;
 
   cursor: pointer;
-  opacity: 0; /* Початково невидима */
-  pointer-events: none; /* Щоб не можна було клікнути, коли невидима */
+  opacity: 0;
+  pointer-events: none;
   transition: opacity 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
   display: flex;
@@ -30,7 +30,14 @@
 
 @media only screen and (min-width: 768px) {
   .scroll-to-top-btn-icon {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .scroll-to-top-btn-icon {
+    width: 50px;
+    height: 50px;
   }
 }

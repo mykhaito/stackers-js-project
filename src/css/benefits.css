@@ -1,8 +1,12 @@
 .section-benefits {
-  padding: 16px;
   background-color: var(--background-color);
   display: flex;
   justify-content: center;
+  flex-direction: column;
+}
+
+.section-benefits-container {
+  display: flex;
   flex-direction: column;
 }
 
@@ -12,7 +16,7 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
-  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   width: 284px;
   height: 24px;
   margin-bottom: 32px;
@@ -36,7 +40,7 @@
 .benefits-item {
   border-radius: 20px;
   padding: 24px;
-  min-width: 320px;
+  /* min-width: 320px; */
   height: 270px;
 
   background: var(--cards-color);
@@ -67,7 +71,7 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: var(--main-text-color);
-  transition: background-color 0.3s ease;
+  transition: background-color 300ms ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -78,11 +82,12 @@
   border-radius: 60px;
   width: 187px;
   height: 55px;
+  outline: none;
 }
 .button-click:hover,
 .button-click:focus {
   background-color: var(--button-text-color);
-  color: #121212;
+  color: var(--main-text-color);
 }
 
 @media (min-width: 375px) and (max-width: 767px) {
@@ -104,13 +109,13 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .section-benefits {
+  .section-benefits-container {
     gap: 412px;
     flex-direction: row;
   }
-
   .section-name {
     flex-grow: 1;
+    margin-bottom: 0px;
   }
   .benefits-cards {
     flex-grow: 1;

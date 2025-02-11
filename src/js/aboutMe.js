@@ -1,5 +1,3 @@
-// ======== Accordion
-
 import Accordion from 'accordion-js';
 // console.log(Accordion);
 

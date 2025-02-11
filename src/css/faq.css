@@ -12,20 +12,21 @@
   margin-bottom: 32px;
 }
 
-.ac-css {
+.faq-list-item {
   border: none;
   border-top: 1px solid rgba(250, 250, 250, 0.2);
   background-color: transparent;
   margin: 0;
   padding-top: 20px;
   padding-bottom: 0px;
+  position: relative;
 }
 
-.ac-css:last-child {
+.faq-list-item:last-child {
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.ac-css .ac-trigger-css {
+.faq-list-item .faq-desc {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 20px;
@@ -35,11 +36,11 @@
   padding: 0px 44px 20px 0px;
 }
 
-.ac-css .ac-trigger-css:focus {
+.faq-list-item .faq-desc:focus {
   color: #fafafa;
 }
 
-.ac-css .ac-panel-css .ac-text-css {
+.faq-list-item .faq-panel .faq-text {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -50,23 +51,66 @@
   padding-bottom: 20px;
 }
 
-.ac .ac-trigger::after {
+.faq-list-item .faq-desc::after {
   display: none;
 }
 
-.btn-svg {
-  display: inline-block;
+.faq-ac-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
   position: absolute;
   top: 0;
   right: 0;
-  width: 34px;
-  height: 34px;
-  fill: transparent;
-  transition: transform 0.3s ease-in-out;
+  background-color: transparent;
+  transition: background-color 300ms ease;
+  flex-shrink: 0;
 }
 
-.ac.is-active .btn-svg {
-  transform: rotate(180deg);
+.faq-ac-icon {
+  fill: transparent;
+  transition: transform 500ms ease-in-out, fill 300ms ease;
+}
+.faq-ac-icon-wrapper:hover {
+  background-color: var(--button-text-color);
+}
+.ac-trigger:focus .faq-ac-icon-wrapper {
+  background-color: var(--button-text-color);
+}
+
+.ac-trigger:focus .faq-ac-icon {
+  fill: var(--button-text-color);
+}
+
+.ac.is-active .ac-trigger:focus .faq-ac-icon-wrapper {
+  background-color: var(--button-text-color);
+}
+
+.ac.is-active .ac-trigger:focus .faq-ac-icon {
+  fill: var(--button-text-color);
+}
+
+.ac.is-active .faq-ac-icon {
+  transform: rotateX(180deg);
+}
+
+.ac-trigger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  width: 100%;
+}
+
+.faq-last-desc {
+  display: block;
+  max-width: calc(100% - 50px);
+  min-width: 0;
+  word-break: break-word;
 }
 
 @media only screen and (min-width: 768px) {
@@ -75,87 +119,93 @@
     padding-bottom: 48px;
   }
 
-  .ac-css {
+  .faq-list-item {
     padding-top: 32px;
     padding-bottom: 32px;
   }
 
-  .ac-css:last-child {
+  .faq-list-item:last-child {
     padding-bottom: 24px;
   }
 
-  .ac-css .ac-trigger-css {
+  .faq-list-item .faq-desc {
     padding: 0px 90px 0px 0px;
+    outline: none;
   }
 
-  .ac-css .ac-panel-css .ac-text-css {
+  .faq-list-item .faq-panel .faq-text {
     padding-top: 26px;
     padding-bottom: 0px;
   }
 
-  .btn-svg {
+  .faq-ac-icon-wrapper {
     width: 40px;
     height: 40px;
+  }
+
+  .faq-ac-icon {
+    width: 20px;
+    height: 20px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .accordion-container {
+  .faq-list {
     display: flex;
     flex-wrap: wrap;
     gap: 0px;
   }
-  .ac-css {
+  .faq-list-item {
     width: 50%;
     padding-right: 32px;
   }
 
-  .last-desc {
+  .faq-last-desc {
     max-width: 485px;
   }
 
-  .ac-css .ac-panel-css .ac-text-css:last-child {
+  .faq-list-item .faq-panel .faq-text:last-child {
     padding-bottom: 0px;
   }
 
-  .ac-css .ac-trigger-css {
+  .faq-list-item .faq-desc {
     padding-right: 0px;
   }
 
-  .ac-css:nth-child(3),
-  .ac-css:nth-child(6) {
+  .faq-list-item:nth-child(3),
+  .faq-list-item:nth-child(6) {
     border-bottom: 1px solid rgba(250, 250, 250, 0.2);
   }
 
-  .ac-css:nth-child(4),
-  .ac-css:nth-child(5),
-  .ac-css:nth-child(6) {
+  .faq-list-item:nth-child(4),
+  .faq-list-item:nth-child(5),
+  .faq-list-item:nth-child(6) {
     border-left: 1px solid rgba(250, 250, 250, 0.2);
     padding-left: 32px;
     padding-right: 0;
   }
 
-  .ac-css:nth-child(1) {
+  .faq-list-item:nth-child(1) {
     order: 1;
   }
 
-  .ac-css:nth-child(2) {
+  .faq-list-item:nth-child(2) {
     order: 3;
   }
 
-  .ac-css:nth-child(3) {
+  .faq-list-item:nth-child(3) {
     order: 5;
   }
 
-  .ac-css:nth-child(4) {
+  .faq-list-item:nth-child(4) {
     order: 2;
   }
 
-  .ac-css:nth-child(5) {
+  .faq-list-item:nth-child(5) {
     order: 4;
   }
 
-  .ac-css:nth-child(6) {
+  .faq-list-item:nth-child(6) {
     order: 6;
     padding-top: 32px;
   }

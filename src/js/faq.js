@@ -1,6 +1,17 @@
 import Accordion from 'accordion-js';
 
-new Accordion('.accordion-container', {
-  duration: 400,
+const accordion = new Accordion('.faq-list', {
+  duration: 500,
   showMultiple: false,
+  onOpen: currentElement => {
+    const acTrigger = currentElement.querySelector('.ac-trigger');
+
+    acTrigger.focus();
+
+    acTrigger.addEventListener('mousedown', function () {
+      setTimeout(() => {
+        this.blur();
+      }, 1000);
+    });
+  },
 });

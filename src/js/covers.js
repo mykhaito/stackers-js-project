@@ -1,5 +1,3 @@
-// <!-- section COVERS responsible Yurii Nabasov -->
-
 document.addEventListener('DOMContentLoaded', () => {
   const coversSection = document.querySelector('.covers-section');
 
@@ -37,5 +35,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
-
-// <!-- /section COVERS responsible Yurii Nabasov -->

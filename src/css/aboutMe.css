@@ -180,6 +180,9 @@
 
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 50%;
+  fill: transparent;
+  background-color: transparent;
+  transition: background-color 300ms ease, fill 300ms ease;
 }
 .about-me-ac-icon {
   width: 18px;
@@ -200,6 +203,25 @@
   transform: rotateX(180deg);
   /* transform: rotate(-180deg); */
   /* transform: rotate(180deg); */
+}
+
+.about-me-ac-icon-wrapper:hover {
+  background-color: var(--button-text-color);
+}
+.ac-trigger:focus .about-me-ac-icon-wrapper {
+  background-color: var(--button-text-color);
+}
+
+.ac-trigger:focus .about-me-ac-icon-wrapper {
+  fill: var(--button-text-color);
+}
+
+.ac.is-active .ac-trigger:focus .about-me-ac-icon-wrapper {
+  background-color: var(--button-text-color);
+}
+
+.ac.is-active .ac-trigger:focus .about-me-ac-icon-wrapper {
+  fill: var(--button-text-color);
 }
 
 .my-styles-ac-text {
@@ -368,20 +390,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
+  fill: var(--background-color);
   padding: 0;
   margin-left: auto;
   background-color: transparent;
-
   outline: 1px solid transparent;
-
   border: none;
   border-radius: 50%;
-
-  transition: outline-color 250ms ease-in-out;
+  transition: fill 0.3s ease-in-out, outline-color 250ms ease-in-out;
 }
 .about-me-swiper-btn-next:hover,
 .about-me-swiper-btn-next:focus {
+  fill: var(--button-text-color);
   outline-color: rgba(250, 250, 250, 0.2);
 }
 
@@ -405,8 +425,8 @@
     width: 1200px;
   }
   .my-skills-swiper-subsection {
-    margin-left: 32px;
-    margin-right: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 /* ======== /swiper ======== */

@@ -2,8 +2,6 @@
 import Swiper from 'swiper';
 import { Navigation, Keyboard, HashNavigation, Mousewheel } from 'swiper/modules'; //ось це замінити
 
-const prevBtn = document.querySelector('.swiper-button-left');
-const nextBtn = document.querySelector('.swiper-button-right');
 const swiperContainer = document.querySelector('.swiper-projects-js');
 
 const swiper = new Swiper(swiperContainer, {
@@ -13,10 +11,10 @@ const swiper = new Swiper(swiperContainer, {
   slidesPerView: 1,
   grabCursor: true,  //додай це
   loop: false,
-  speed: 400,
+  speed: 600,
   navigation: {
-    nextEl: nextBtn,
-    prevEl: prevBtn,
+    prevEl: '.projects-btn-prev',
+    nextEl: '.projects-btn-next',
   },
   keyboard: {
     enabled: true,
@@ -46,15 +44,16 @@ document.addEventListener('keydown', (evt) => {
   if (evt.key === 'ArrowRight' && !nextBtn.disabled) nextBtn.click();
 });
 
-[prevBtn, nextBtn].forEach((button, index)  => {
-  button.addEventListener('focus', () => button.classList.add('focused'));
-  button.addEventListener('blur', () => button.classList.remove('focused'));
+document.addEventListener('DOMContentLoaded', () => {
+  const prevButton = document.querySelector('.projects-btn-prev');
+  const nextButton = document.querySelector('.projects-btn-next');
 
-  button.addEventListener('keydown', (evt) => {
-    if (evt.key === ' ' || evt.key === 'Enter') {
-      evt.preventDefault();
-      index === 0 ? swiper.slidePrev() : swiper.slideNext();
-    }
+  [prevButton, nextButton].forEach(button => {
+    button.addEventListener('mousedown', function () {
+      setTimeout(() => {
+        this.blur();
+      }, 1000);
+    });
   });
 //  додай будь-ласка ось цю функцію
   button.addEventListener('touchstart', (evt) => {   

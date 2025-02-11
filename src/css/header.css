@@ -1,0 +1,139 @@
+.logo-img {
+  border-radius: 18px;
+  width: 80px;
+  height: 80px;
+}
+
+.header-logo {
+  display: flex;
+  outline: none;
+  transition: transform 300ms ease-in-out;
+  gap: 8px;
+}
+
+.header-logo:hover,
+.header-logo:focus {
+  transform: scale(1.1);
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: transparent;
+}
+
+.dropdown {
+  display: none;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+}
+
+.dropbtn {
+  font-weight: 500;
+  outline: none;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--main-text);
+  padding: 10px;
+  width: 60px;
+  height: 39px;
+  transition: transform 300ms ease, color 300ms ease;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  transform: scale(1.2);
+  color: var(--button-text-color);
+}
+
+.dropbtn:active {
+  transform: scale(1);
+  color: inherit;
+}
+
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: transparent;
+  padding-top: 32px;
+}
+
+.mobile-open-btn {
+  border: none;
+  line-height: 0;
+  background-color: transparent;
+  padding: 0;
+  stroke: white;
+  transition: transform 300ms ease, color 300ms ease;
+}
+
+.mobile-open-btn:hover,
+.mobile-open-btn:focus {
+  transform: scale(1.2);
+}
+
+.mobile-btn-icon {
+  stroke: currentColor;
+}
+
+.header-order-button {
+  display: none;
+}
+
+/* --HEADER TABLET-- */
+@media screen and (min-width: 768px) {
+  .dropdown {
+    display: grid;
+    gap: 8px;
+    justify-items: center;
+  }
+  .dropdown-content {
+    display: none;
+    /* display: grid; */
+    gap: 5px;
+    justify-items: center;
+  }
+  .mobile-open-btn {
+    display: none;
+  }
+
+  .header-order-button {
+    display: block;
+    width: 163px;
+    height: 55px;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: var(--main-text);
+    border-radius: 60px;
+    padding: 18px 24px;
+    background: var(--button-text-color);
+    border: none;
+    outline: none;
+    transition: transform 300ms ease;
+  }
+
+  .header-order-button:hover,
+  .header-order-button:focus {
+    transform: scale(1.2);
+  }
+
+  .header-order-button:active {
+    transform: scale(1);
+  }
+}
+
+/* --/HEADER TABLET-- */
+@media screen and (min-width: 1440px) {
+}

@@ -1,4 +1,4 @@
-<div class="section">
+<section class="section" id="aboutMe">
   <div class="container about-me-container">
     <h2 class="visually-hidden">About me</h2>
     <div class="first-encounter-subsection">
@@ -11,29 +11,29 @@
       <picture>
         <source
           srcset="
-            ../img/about_me/desktop-about-me-portrait.jpg    1x,
-            ../img/about_me/desktop-about-me-portrait@2x.jpg 2x
+            ./img/about_me/desktop-about-me-portrait.jpg    1x,
+            ./img/about_me/desktop-about-me-portrait@2x.jpg 2x
           "
           media="(min-width: 1440px)"
         />
         <source
           srcset="
-            ../img/about_me/tablet-about-me-portrait.jpg    1x,
-            ../img/about_me/tablet-about-me-portrait@2x.jpg 2x
+            ./img/about_me/tablet-about-me-portrait.jpg    1x,
+            ./img/about_me/tablet-about-me-portrait@2x.jpg 2x
           "
           media="(min-width: 768px)"
         />
         <source
           srcset="
-            ../img/about_me/mobile-about-me-portrait.jpg    1x,
-            ../img/about_me/mobile-about-me-portrait@2x.jpg 2x
+            ./img/about_me/mobile-about-me-portrait.jpg    1x,
+            ./img/about_me/mobile-about-me-portrait@2x.jpg 2x
           "
           media="(max-width: 767px)"
         />
 
         <img
           class="first-encounter-subsection-portrait"
-          src="../img/about_me/mobile-about-me-portrait.jpg"
+          src="./img/about_me/mobile-about-me-portrait.jpg"
           alt="my-portrait"
         />
       </picture>
@@ -41,14 +41,13 @@
     <div class="description-of-me-subsection">
       <ul class="accordion-container my-styles-accordion-container">
         <li class="ac my-styles-ac about-me-ac">
-          <!--adds class='is-active' on <li class='ac'> when ac is opened-->
           <button class="ac-trigger my-styles-ac-trigger" type="button">
-            <h3 class="my-styles-accordion-title">About me</h3>
-            <div class="about-me-ac-icon-wrapper">
+            <span class="my-styles-accordion-title">About me</span>
+            <span class="about-me-ac-icon-wrapper">
               <svg class="about-me-ac-icon" width="18" height="18">
-                <use href="../img/sprite.svg#icon-arrow-up"></use>
+                <use href="./img/sprite.svg#icon-arrow-up"></use>
               </svg>
-            </div>
+            </span>
           </button>
 
           <div class="ac-panel my-styles-ac-panel">
@@ -76,14 +75,13 @@
           </div>
         </li>
         <li class="ac my-styles-ac role-ac">
-          <!--adds class='is-active' on <li class='ac'> when ac is opened-->
           <button class="ac-trigger my-styles-ac-trigger" type="button">
-            <h3 class="my-styles-accordion-title">Role</h3>
-            <div class="about-me-ac-icon-wrapper">
+            <span class="my-styles-accordion-title">Role</span>
+            <span class="about-me-ac-icon-wrapper">
               <svg class="about-me-ac-icon" width="18" height="18">
-                <use href="../img/sprite.svg#icon-arrow-up"></use>
+                <use href="./img/sprite.svg#icon-arrow-up"></use>
               </svg>
-            </div>
+            </span>
           </button>
 
           <div class="ac-panel my-styles-ac-panel">
@@ -95,14 +93,13 @@
           </div>
         </li>
         <li class="ac my-styles-ac education-ac">
-          <!--adds class='is-active' on <li class='ac'> when ac is opened-->
           <button class="ac-trigger my-styles-ac-trigger" type="button">
-            <h3 class="my-styles-accordion-title">Education</h3>
-            <div class="about-me-ac-icon-wrapper">
+            <span class="my-styles-accordion-title">Education</span>
+            <span class="about-me-ac-icon-wrapper">
               <svg class="about-me-ac-icon" width="18" height="18">
-                <use href="../img/sprite.svg#icon-arrow-up"></use>
+                <use href="./img/sprite.svg#icon-arrow-up"></use>
               </svg>
-            </div>
+            </span>
           </button>
 
           <div class="ac-panel my-styles-ac-panel">
@@ -143,9 +140,9 @@
       </div>
       <button class="about-me-swiper-btn-next" type="button">
         <svg class="about-me-swiper-btn-next-icon" width="28" height="28">
-          <use href="../img/sprite.svg#icon-arrow-right"></use>
+          <use href="./img/sprite.svg#icon-arrow-right"></use>
         </svg>
       </button>
     </div>
   </div>
-</div>
+</section>

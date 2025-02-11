@@ -1,0 +1,138 @@
+/* <!-- section MENU responsible Yurii Nabasov --> */
+/* Mobile first design */
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
+  background-size: cover;
+  background-position: center;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-text);
+  overflow: hidden; /* Забороняємо скрол всередині меню */
+  transform: translateX(100%);
+  transition: transform 300ms ease, opacity 300ms ease, visibility 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (min-resolution: 2dppx) {
+  .mobile-menu {
+    background-image: url('/img/hero_webp/hero_colors_1_2x.webp');
+  }
+}
+
+.mobile-menu.is-open {
+  transform: translateX(0);
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+body.menu-open {
+  overflow: hidden; /* Забороняємо скрол сторінки */
+  touch-action: none; /* Забороняємо скрол на мобільних пристроях */
+  position: fixed;
+  width: 100%;
+}
+
+.mobile-menu-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mobile-menu-nav {
+  text-align: center;
+}
+
+.mobile-menu-close-btn {
+  position: absolute;
+  z-index: 999;
+  top: 32px;
+  right: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 300ms ease, color 300ms ease;
+}
+
+.mobile-menu-close-btn:hover,
+.mobile-menu-close-btn:focus {
+  transform: scale(1.2);
+}
+
+.mobile-menu-close-btn-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.mobile-nav-link {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  outline: none;
+}
+
+.mobile-nav-item {
+  margin-bottom: 12px;
+  transition: transform 300ms ease, color 300ms ease;
+}
+
+.mobile-nav-item:last-child {
+  margin-bottom: 0;
+}
+
+.mobile-nav-item:hover .mobile-nav-link,
+.mobile-nav-item:focus-within .mobile-nav-link {
+  color: var(--button-text-color);
+  transform: scale(1.2);
+}
+
+.mobile-nav-item:active .mobile-nav-link {
+  color: var(--main-text-color);
+}
+.mobile-nav-item:hover,
+.mobile-nav-item:focus-within {
+  transform: scale(1.2);
+}
+.mobile-nav-item:active {
+  transform: scale(1);
+}
+
+.mobile-order-button {
+  position: absolute;
+  bottom: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 14px 31px;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: var(--main-text);
+  border-radius: 60px;
+  background: var(--button-text-color);
+  border: none;
+  min-width: 164px;
+}
+
+.mobile-order-button:hover,
+.mobile-order-button:focus {
+  background-color: #e0373f;
+}
+
+/* <!-- section /MENU responsible Yurii Nabasov --> */

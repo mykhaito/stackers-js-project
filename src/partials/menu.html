@@ -1,26 +1,26 @@
 <div class="mobile-menu" data-menu>
-  <button class="mobile-menu-close-btn" data-menu-close>
+  <button class="mobile-menu-close-btn" data-menu-close aria-label="Close menu">
     <svg class="mobile-menu-close-btn-icon">
       <use href="./img/sprite.svg#icon-close-btn"></use>
     </svg>
   </button>
   <div class="container mobile-menu-container">
-    <nav class="mobile-menu-nav">
-      <ul class="mobile-nav-list">
-        <li class="mobile-nav-item">
-          <a class="mobile-nav-link" href="#aboutMe">About me</a>
+    <nav class="mobile-menu-nav" aria-label="Mobile navigation">
+      <ul class="mobile-nav-list" role="list">
+        <li class="mobile-nav-item" role="listitem">
+          <a class="mobile-nav-link" href="#aboutMe" role="menuitem">About me</a>
         </li>
-        <li class="mobile-nav-item">
-          <a class="mobile-nav-link" href="#benefits">Benefits</a>
+        <li class="mobile-nav-item" role="listitem">
+          <a class="mobile-nav-link" href="#benefits" role="menuitem">Benefits</a>
         </li>
-        <li class="mobile-nav-item">
-          <a class="mobile-nav-link" href="#projects">Projects</a>
+        <li class="mobile-nav-item" role="listitem">
+          <a class="mobile-nav-link" href="#projects" role="menuitem">Projects</a>
         </li>
-        <li class="mobile-nav-item">
-          <a class="mobile-nav-link" href="#faq">FAQ</a>
+        <li class="mobile-nav-item" role="listitem">
+          <a class="mobile-nav-link" href="#faq" role="menuitem">FAQ</a>
         </li>
       </ul>
     </nav>
-    <button class="mobile-order-button" type="button">Order the project</button>
+    <button class="mobile-order-button" type="button" role="menuitem">Order the project</button>
   </div>
 </div>

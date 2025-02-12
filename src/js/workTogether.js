@@ -11,7 +11,9 @@ const validationMessage = document.querySelector('.validation-message');
 const closeModal = () => {
   modalWindow.classList.remove('is-open');
   document.body.classList.remove('modal-open');
-  document.removeEventListener('keydown', handleEscapeKey);
+  setTimeout(() => {
+    document.removeEventListener('keydown', handleEscapeKey);
+  }, 250);
 };
 
 const validateEmail = () => {

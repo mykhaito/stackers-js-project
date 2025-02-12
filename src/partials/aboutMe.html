@@ -15,6 +15,7 @@
             ./img/about_me/desktop-about-me-portrait@2x.jpg 2x
           "
           media="(min-width: 1440px)"
+          type="image/jpeg"
         />
         <source
           srcset="
@@ -22,6 +23,7 @@
             ./img/about_me/tablet-about-me-portrait@2x.jpg 2x
           "
           media="(min-width: 768px)"
+          type="image/jpeg"
         />
         <source
           srcset="
@@ -29,19 +31,21 @@
             ./img/about_me/mobile-about-me-portrait@2x.jpg 2x
           "
           media="(max-width: 767px)"
+          type="image/jpeg"
         />
 
         <img
           class="first-encounter-subsection-portrait"
           src="./img/about_me/mobile-about-me-portrait.jpg"
           alt="my-portrait"
+          loading="lazy"
         />
       </picture>
     </div>
     <div class="description-of-me-subsection">
       <ul class="accordion-container my-styles-accordion-container">
         <li class="ac my-styles-ac about-me-ac">
-          <button class="ac-trigger my-styles-ac-trigger" type="button">
+          <button class="ac-trigger my-styles-ac-trigger" type="button" aria-controls="about-me-panel" aria-label="About me panel">
             <span class="my-styles-accordion-title">About me</span>
             <span class="about-me-ac-icon-wrapper">
               <svg class="about-me-ac-icon" width="18" height="18">
@@ -50,7 +54,7 @@
             </span>
           </button>
 
-          <div class="ac-panel my-styles-ac-panel">
+          <div class="ac-panel my-styles-ac-panel" aria-labelledby="about-me">
             <p class="my-styles-ac-text for-margin-bottom">
               I am Lloyd Jefferson, a talented programmer with extensive
               expertise in software development. I have an understanding of
@@ -75,7 +79,7 @@
           </div>
         </li>
         <li class="ac my-styles-ac role-ac">
-          <button class="ac-trigger my-styles-ac-trigger" type="button">
+          <button class="ac-trigger my-styles-ac-trigger" type="button" aria-controls="role-panel" aria-label="Role panel">
             <span class="my-styles-accordion-title">Role</span>
             <span class="about-me-ac-icon-wrapper">
               <svg class="about-me-ac-icon" width="18" height="18">
@@ -84,7 +88,7 @@
             </span>
           </button>
 
-          <div class="ac-panel my-styles-ac-panel">
+          <div class="ac-panel my-styles-ac-panel" aria-labelledby="role">
             <ul class="about-me-role-list">
               <li class="my-styles-ac-text">Frontend development</li>
               <li class="my-styles-ac-text">HeadlessCMS,Wordpress</li>
@@ -93,7 +97,7 @@
           </div>
         </li>
         <li class="ac my-styles-ac education-ac">
-          <button class="ac-trigger my-styles-ac-trigger" type="button">
+          <button class="ac-trigger my-styles-ac-trigger" type="button" aria-controls="education-panel" aria-label="Educational panel">
             <span class="my-styles-accordion-title">Education</span>
             <span class="about-me-ac-icon-wrapper">
               <svg class="about-me-ac-icon" width="18" height="18">
@@ -102,7 +106,7 @@
             </span>
           </button>
 
-          <div class="ac-panel my-styles-ac-panel">
+          <div class="ac-panel my-styles-ac-panel" aria-labelledby="education">
             <ul class="about-me-education-list">
               <li class="my-styles-ac-text">
                 2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
@@ -138,7 +142,7 @@
           <li class="swiper-slide about-me-swiper-slide">Soft skills</li>
         </ul>
       </div>
-      <button class="about-me-swiper-btn-next" type="button">
+      <button class="about-me-swiper-btn-next" type="button" aria-label="Next slide">
         <svg class="about-me-swiper-btn-next-icon" width="28" height="28">
           <use href="./img/sprite.svg#icon-arrow-right"></use>
         </svg>

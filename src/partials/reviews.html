@@ -2,15 +2,16 @@
   <div class="container">
     <h2 class="reviews-title">Reviews</h2>
     <div class="reviews-slider swiper">
-      <div class="reviews-error visually-hidden">
+      <div class="reviews-error visually-hidden" role="alert">
         <p class="reviews-error-text">Not found</p>
       </div>
-      <ul class="reviews-list swiper-wrapper"></ul>
+      <ul class="reviews-list swiper-wrapper" role="list"></ul>
       <div class="reviews-nav">
         <button
           class="reviews-button-prev"
           type="button"
           aria-label="Previous review"
+          aria-controls="reviews-list"
         >
           <svg class="icon-arrow-left" width="52" height="52">
             <use href="./img/sprite.svg#icon-arrow-left"></use>
@@ -20,6 +21,7 @@
           class="reviews-button-next"
           type="button"
           aria-label="Next review"
+          aria-controls="reviews-list"
         >
           <svg class="icon-arrow-right" width="52" height="52">
             <use href="./img/sprite.svg#icon-arrow-right"></use>

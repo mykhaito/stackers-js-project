@@ -89,6 +89,7 @@
 
 .header-order-button {
   display: none;
+
 }
 
 /* --HEADER TABLET-- */
@@ -109,7 +110,9 @@
   }
 
   .header-order-button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 163px;
     height: 55px;
     font-weight: 500;

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/stackers-js-project/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Lloyd Jefferson - Frontend Developer with expertise in HTML, CSS and JS" />
     <title>Jefferson *</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,19 +15,19 @@
     <script type="module" crossorigin src="/stackers-js-project/index.js"></script>
     <link rel="modulepreload" crossorigin href="/stackers-js-project/assets/vendor-hTQ6XvGf.js">
     <link rel="stylesheet" crossorigin href="/stackers-js-project/assets/vendor-D_nxXpU-.css">
-    <link rel="stylesheet" crossorigin href="/stackers-js-project/assets/index-CsnZpIMV.css">
+    <link rel="stylesheet" crossorigin href="/stackers-js-project/assets/index-CDQ71-S8.css">
   </head>
   <body>
     <!-- Responsible person : Yurii Nabasoff -->
     <header class="page-header">
   <div class="container page-header-container">
-    <a class="logo header-logo" href="./index.html">
+    <a class="logo header-logo" href="./index.html" aria-label="Home">
       <img class="logo-img" src="data:image/webp;base64,UklGRjYEAABXRUJQVlA4ICoEAAAQFACdASpQAFAAPpFAmkolo6Ihp7VbWLASCWMAzS3JScDb19I16pQEIt1q/e04J6UGaL5A/q72B+ld6Lq9RfjT0eXAwZz+j6drmMKQ8q0i85tHiU0oc/fFnF38s9NN1wbg2unVBayNfPVtP+tHoM7D2ycGpnCXvnwPDzdaPEsS4ey6B8Sz72LF1083nikZPmBRb4FyRQHT+LCW1d6jjrHR+UPw4PUAcfsAAP7+7T7TU7IHNecWM6AHYF8jgJ3pTTlGJQrwuLPzSc6kDhlxqcCvz+CWr4nNJBek1LGd1lpLtjWw+mO+l9X9dWT4lniVlIlcuAv+b0ty0vZl3jXmUJYMF9Ri1JxNI6BNIsCEbkYPK+WsvWLj46L5BKoLBK4B5T9MwMCEU6uNIzxfmNpgxiSlvJagMXjTJ/Us4SJE0PPM47tAc4ZrrerV3nAtdW0zWNSuxqmie9L/Oqm7D4szjJhHZ6QaevqLKyyDOUK7Ns1lPLntDZF3kiNZ7qnmEzfmZ7nNKNJct/8JO4tw++3qNUUV7Oe6pG4iVyzswEJC9AHQnfHKqulLTVizdQY9EXKP13lHOF8l24RS0yjKF8j21R8pTWnI5/Q40+db+iy42oTimEJBG9+2DqvD5kiiIZv5xmgTh4B3ijyVHH7wy2bizHcVg3j4/wYnVBlfDo06yXrDGKyRdIciD4SovoDeaOGWV4PBtyXiVca0GYrJ/1222efoXOKLKOpAiob9B91JgEUkEIy77HsB+QLdLgC69461YC8xQaZIY/ONOaTlk2DOxc3TsIAOnURl9csnNavH0DeGWc8fDMH34egXsNbEHtsju7w9fzaKMxZ1e4WVWoF7BGF07U9sbMZVhlwbf7nmbKy+RsA7XaugI1es3XFZo7Hws/4JY5jEe1b67MNjVMmHboK9Ia/MdFKS/ww98Y1pAgYQF4ARWe5dpnMVQquSGtrZqxiz15RBFv3R7OAq7dph3HzjDs79/05tT9Kk1Ca7Desns+lnTpUcs+LTEp42jVM/ZJ6AF7trbpH4clj2kAzcj13LM3bE49qfg2TCh3oEmSWx3VelIrw3hd2fUNzg+XFik0V3NpG24Wq69ZECqfhXfELmgnWGDnQXgyGHZ+k0QOd56w1k5v+XKkGIyMvwXZsfG6vuLW23UPcaR2LBrSAGUBPaxGZn94+BkC0BKay+JazplaIBzxj1zre/NBldkGBob8h/9k1JR3y4UU/WzfQwKnLYYM+EKVoP/OBgvLIOvvnoWpj9h9lv5sBdNk64Jv7JVhvk3oWIfD4eGS/4g1jCALHX6RueR8fMNqlsng6liRqHzS6oJselzdjoGtWKQ+t/i/tjW6Gb/4eEFfMH9fZYnsGysW2Tsj4PbLguLlPOmcEgAesWMPmLDy77TfPU7VBMnSHh2+KqWtNjIAAA" alt="Logo" />
       <span class="logo-part">jefferson*</span>
     </a>
-    <nav class="dropdown">
-      <button class="dropbtn">Menu</button>
-      <ul class="dropdown-content">
+    <nav class="dropdown" aria-label="Main navigation">
+      <button class="dropbtn" aria-controls="dropdown-content">Menu</button>
+      <ul class="dropdown-content" id="dropdown-content" role="menu">
         <li class="mobile-nav-item">
           <a class="mobile-nav-link" href="#aboutMe">About me</a>
         </li>
@@ -41,12 +42,12 @@
         </li>
       </ul>
     </nav>
-    <button class="mobile-open-btn" type="button" data-menu-open>
+    <button class="mobile-open-btn" type="button" data-menu-open aria-label="Open menu">
       <svg class="mobile-btn-icon" width="28" height="28">
         <use href="/stackers-js-project/assets/sprite-Dt218--k.svg#icon-burger-menu"></use>
       </svg>
     </button>
-    <a href="#workTogether" class="header-order-button">Order the project</a>
+    <a href="#workTogether" class="header-order-button" aria-label="Order the project">Order the project</a>
   </div>
 </header>
 
@@ -54,17 +55,18 @@
       <!-- Responsible person : Pokora Stanislav -->
       <section class="hero-section">
   <div class="container hero-container">
-    <h1 class="hero-title">
+    <h1 class="hero-title" id="hero-heading">
       Hello. <br />
       I’m Fullstack developer Lloyd Jefferson.
     </h1>
-    <ul class="hero-social-links-list">
+    <ul class="hero-social-links-list" aria-labelledby="hero-heading" role="list">
       <li class="hero-link">
         <a
           class="hero-social-links"
           href="https://www.instagram.com/goitclub/ "
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Instagram"
           >IG</a
         >
       </li>
@@ -74,6 +76,7 @@
           href=" https://www.facebook.com/goITclub/ "
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Facebook"
           >FB</a
         >
       </li>
@@ -83,6 +86,7 @@
           href="https://www.youtube.com/c/GoIT "
           rel="noopener noreferrer"
           target="_blank"
+          aria-label="YouTube"
           >YT</a
         >
       </li>
@@ -92,6 +96,7 @@
           href="https://github.com/mykhaito/stackers-js-project"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub"
           >GH</a
         >
       </li>
@@ -99,6 +104,7 @@
         <a
           class="hero-social-links hero-social-email"
           href="mailto:lloydjefferson@gmail.com"
+          aria-label="Email Lloyd Jefferson"
           >lloydjefferson@gmail.com</a
         >
       </li>
@@ -121,27 +127,31 @@
         <source
           srcset="/stackers-js-project/assets/desktop-about-me-portrait-DRhNJyzT.jpg 1x, /stackers-js-project/assets/desktop-about-me-portrait@2x-Dx-9yoMJ.jpg 2x"
           media="(min-width: 1440px)"
+          type="image/jpeg"
         />
         <source
           srcset="/stackers-js-project/assets/tablet-about-me-portrait-DFsGSw-9.jpg 1x, /stackers-js-project/assets/tablet-about-me-portrait@2x-CBCWNkIf.jpg 2x"
           media="(min-width: 768px)"
+          type="image/jpeg"
         />
         <source
           srcset="/stackers-js-project/assets/mobile-about-me-portrait-Cj9AWWyL.jpg 1x, /stackers-js-project/assets/mobile-about-me-portrait@2x-Bqv_1Et5.jpg 2x"
           media="(max-width: 767px)"
+          type="image/jpeg"
         />
 
         <img
           class="first-encounter-subsection-portrait"
           src="/stackers-js-project/assets/mobile-about-me-portrait-Cj9AWWyL.jpg"
           alt="my-portrait"
+          loading="lazy"
         />
       </picture>
     </div>
     <div class="description-of-me-subsection">
       <ul class="accordion-container my-styles-accordion-container">
         <li class="ac my-styles-ac about-me-ac">
-          <button class="ac-trigger my-styles-ac-trigger" type="button">
+          <button class="ac-trigger my-styles-ac-trigger" type="button" aria-controls="about-me-panel" aria-label="About me panel">
             <span class="my-styles-accordion-title">About me</span>
             <span class="about-me-ac-icon-wrapper">
               <svg class="about-me-ac-icon" width="18" height="18">
@@ -150,7 +160,7 @@
             </span>
           </button>
 
-          <div class="ac-panel my-styles-ac-panel">
+          <div class="ac-panel my-styles-ac-panel" aria-labelledby="about-me">
             <p class="my-styles-ac-text for-margin-bottom">
               I am Lloyd Jefferson, a talented programmer with extensive
               expertise in software development. I have an understanding of
@@ -175,7 +185,7 @@
           </div>
         </li>
         <li class="ac my-styles-ac role-ac">
-          <button class="ac-trigger my-styles-ac-trigger" type="button">
+          <button class="ac-trigger my-styles-ac-trigger" type="button" aria-controls="role-panel" aria-label="Role panel">
             <span class="my-styles-accordion-title">Role</span>
             <span class="about-me-ac-icon-wrapper">
               <svg class="about-me-ac-icon" width="18" height="18">
@@ -184,7 +194,7 @@
             </span>
           </button>
 
-          <div class="ac-panel my-styles-ac-panel">
+          <div class="ac-panel my-styles-ac-panel" aria-labelledby="role">
             <ul class="about-me-role-list">
               <li class="my-styles-ac-text">Frontend development</li>
               <li class="my-styles-ac-text">HeadlessCMS,Wordpress</li>
@@ -193,7 +203,7 @@
           </div>
         </li>
         <li class="ac my-styles-ac education-ac">
-          <button class="ac-trigger my-styles-ac-trigger" type="button">
+          <button class="ac-trigger my-styles-ac-trigger" type="button" aria-controls="education-panel" aria-label="Educational panel">
             <span class="my-styles-accordion-title">Education</span>
             <span class="about-me-ac-icon-wrapper">
               <svg class="about-me-ac-icon" width="18" height="18">
@@ -202,7 +212,7 @@
             </span>
           </button>
 
-          <div class="ac-panel my-styles-ac-panel">
+          <div class="ac-panel my-styles-ac-panel" aria-labelledby="education">
             <ul class="about-me-education-list">
               <li class="my-styles-ac-text">
                 2018 - 2019 / Frontend Development Diploma, GoIT IT School, New
@@ -238,7 +248,7 @@
           <li class="swiper-slide about-me-swiper-slide">Soft skills</li>
         </ul>
       </div>
-      <button class="about-me-swiper-btn-next" type="button">
+      <button class="about-me-swiper-btn-next" type="button" aria-label="Next slide">
         <svg class="about-me-swiper-btn-next-icon" width="28" height="28">
           <use href="/stackers-js-project/assets/sprite-Dt218--k.svg#icon-arrow-right"></use>
         </svg>
@@ -250,9 +260,9 @@
       <!-- Responsible person : Kseniia Korchmariuk -->
       <section class="section section-benefits" id="benefits">
   <div class="container section-benefits-container">
-    <h2 class="section-name">BENEFITS OF WORKING WITH ME</h2>
+    <h2 class="section-name" id="benefits-heading">BENEFITS OF WORKING WITH ME</h2>
     <div class="benefits-cards">
-      <ul class="benefits-list">
+      <ul class="benefits-list" aria-labelledby="benefits-heading">
         <li class="benefits-item">
           <svg class="benefits-img" width="48" height="48">
             <use href="/stackers-js-project/assets/sprite-Dt218--k.svg#icon-services-1"></use>
@@ -297,7 +307,7 @@
           </p>
         </li>
       </ul>
-      <a href="#workTogether" class="button-click">Order the project</a>
+      <a href="#workTogether" class="button-click" rel="noopener noreferrer" aria-label="Order the project">Order the project</a>
     </div>
   </div>
 </section>
@@ -305,16 +315,16 @@
       <!-- Responsible person : Maia Nagladze -->
       <section class="projects section" id="projects">
   <div class="container projects-container">
-    <h2 class="projects-title">Projects</h2>
-    <div class="swiper swiper-projects-js">
-      <ul class="swiper-wrapper projects-swiper-wrapper">
-        <li class="projects-card swiper-slide">
+    <h2 class="projects-title" id="projects-heading">Projects</h2>
+    <div class="swiper swiper-projects-js" aria-labelledby="projects-heading">
+      <ul class="swiper-wrapper projects-swiper-wrapper" role="list">
+        <li class="projects-card swiper-slide" role="listitem">
           <div class="projects-box">
-            <ul class="projects-list">
-              <li class="projects-item">#react</li>
-              <li class="projects-item">#js</li>
-              <li class="projects-item">#node js</li>
-              <li class="projects-item">#git</li>
+            <ul class="projects-list" role="list">
+              <li class="projects-item" role="listitem">#react</li>
+              <li class="projects-item" role="listitem">#js</li>
+              <li class="projects-item" role="listitem">#node js</li>
+              <li class="projects-item" role="listitem">#git</li>
             </ul>
             <p class="projects-box-text">
               Programming Across Borders: Ideas, Technologies, Innovations
@@ -323,6 +333,8 @@
               class="projects-box-link"
               href="https://mykhaito.github.io/stackers-js-project/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="See project"
               >See project</a
             >
           </div>
@@ -342,13 +354,13 @@
             />
           </picture>
         </li>
-        <li class="projects-card swiper-slide">
+        <li class="projects-card swiper-slide" role="listitem">
           <div class="projects-box">
-            <ul class="projects-list">
-              <li class="projects-item">#react</li>
-              <li class="projects-item">#js</li>
-              <li class="projects-item">#node js</li>
-              <li class="projects-item">#git</li>
+            <ul class="projects-list" role="list">
+              <li class="projects-item" role="listitem">#react</li>
+              <li class="projects-item" role="listitem">#js</li>
+              <li class="projects-item" role="listitem">#node js</li>
+              <li class="projects-item" role="listitem">#git</li>
             </ul>
             <p class="projects-box-text">
               Programming Across Borders: Ideas, Technologies, Innovations
@@ -357,6 +369,8 @@
               class="projects-box-link"
               href="https://mykhaito.github.io/stackers-js-project/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="See project"
               >See project</a
             >
           </div>
@@ -376,13 +390,13 @@
             />
           </picture>
         </li>
-        <li class="projects-card swiper-slide">
+        <li class="projects-card swiper-slide" role="listitem">
           <div class="projects-box">
-            <ul class="projects-list">
-              <li class="projects-item">#react</li>
-              <li class="projects-item">#js</li>
-              <li class="projects-item">#node js</li>
-              <li class="projects-item">#git</li>
+            <ul class="projects-list" role="list">
+              <li class="projects-item" role="listitem">#react</li>
+              <li class="projects-item" role="listitem">#js</li>
+              <li class="projects-item" role="listitem">#node js</li>
+              <li class="projects-item" role="listitem">#git</li>
             </ul>
             <p class="projects-box-text">
               Programming Across Borders: Ideas, Technologies, Innovations
@@ -391,6 +405,8 @@
               class="projects-box-link"
               href="https://mykhaito.github.io/stackers-js-project/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="See project"
               >See project</a
             >
           </div>
@@ -434,11 +450,11 @@
       <!-- Responsible person : Riabyi Oleksandr -->
       <section class="faq section" id="faq">
   <div class="container">
-    <h2 class="faq-title">FAQ</h2>
-    <ul class="faq-list">
+    <h2 class="faq-title" id="faq-heading">FAQ</h2>
+    <ul class="faq-list" aria-labelledby="faq-heading">
       <li class="ac faq-list-item">
         <p class="ac-header">
-          <button type="button" class="ac-trigger faq-desc">
+          <button type="button" class="ac-trigger faq-desc" aria-controls="faq-panel-0">
             What programming languages are most often used in your project?
             <span class="faq-ac-icon-wrapper">
               <svg class="faq-ac-icon" width="20" height="20">
@@ -447,7 +463,7 @@
             </span>
           </button>
         </p>
-        <div class="ac-panel faq-panel">
+        <div class="ac-panel faq-panel" id="faq-panel-0" aria-labelledby="faq-heading">
           <p class="ac-text faq-text">
             In the field of web development, there are various technologies and
             programming languages. Typically, this includes a combination of
@@ -457,7 +473,7 @@
       </li>
       <li class="ac faq-list-item">
         <p class="ac-header">
-          <button type="button" class="ac-trigger faq-desc">
+          <button type="button" class="ac-trigger faq-desc" aria-controls="faq-panel-1">
             What are the deadlines for the project?
             <span class="faq-ac-icon-wrapper">
               <svg class="faq-ac-icon" width="20" height="20">
@@ -466,7 +482,7 @@
             </span>
           </button>
         </p>
-        <div class="ac-panel faq-panel">
+        <div class="ac-panel faq-panel" id="faq-panel-1" aria-labelledby="faq-heading">
           <p class="ac-text faq-text">
             The terms of project implementation depend to a large extent on a
             number of factors, such as the scope of the project, its complexity,
@@ -478,7 +494,7 @@
       </li>
       <li class="ac faq-list-item">
         <p class="ac-header">
-          <button type="button" class="ac-trigger faq-desc">
+          <button type="button" class="ac-trigger faq-desc" aria-controls="faq-panel-2">
             What payment methods do you accept?
             <span class="faq-ac-icon-wrapper">
               <svg class="faq-ac-icon" width="20" height="20">
@@ -487,7 +503,7 @@
             </span>
           </button>
         </p>
-        <div class="ac-panel faq-panel">
+        <div class="ac-panel faq-panel" id="faq-panel-2" aria-labelledby="faq-heading">
           <p class="ac-text faq-text">
             Payment through credit and debit cards such as Visa, MasterCard,
             specialized electronic payment systems such as PayPal, as well as
@@ -497,7 +513,7 @@
       </li>
       <li class="ac faq-list-item">
         <p class="ac-header">
-          <button type="button" class="ac-trigger faq-desc">
+          <button type="button" class="ac-trigger faq-desc" aria-controls="faq-panel-3">
             How can I contact you?
             <span class="faq-ac-icon-wrapper">
               <svg class="faq-ac-icon" width="20" height="20">
@@ -506,7 +522,7 @@
             </span>
           </button>
         </p>
-        <div class="ac-panel faq-panel">
+        <div class="ac-panel faq-panel" id="faq-panel-3" aria-labelledby="faq-heading">
           <p class="ac-text faq-text">
             In the field of web development, there are various technologies and
             programming languages. Typically, this includes a combination of
@@ -516,7 +532,7 @@
       </li>
       <li class="ac faq-list-item">
         <p class="ac-header">
-          <button type="button" class="ac-trigger faq-desc">
+          <button type="button" class="ac-trigger faq-desc" aria-controls="faq-panel-4">
             Do you provide advice or support?
             <span class="faq-ac-icon-wrapper">
               <svg class="faq-ac-icon" width="18" height="18">
@@ -525,7 +541,7 @@
             </span>
           </button>
         </p>
-        <div class="ac-panel faq-panel">
+        <div class="ac-panel faq-panel" id="faq-panel-4" aria-labelledby="faq-heading">
           <p class="ac-text faq-text">
             The terms of project implementation depend to a large extent on a
             number of factors, such as the scope of the project, its complexity,
@@ -537,7 +553,7 @@
       </li>
       <li class="ac faq-list-item">
         <p class="ac-header">
-          <button type="button" class="ac-trigger faq-desc">
+          <button type="button" class="ac-trigger faq-desc" aria-controls="faq-panel-5">
             <span class="faq-last-desc">
               What does the process of developing a software product look like
               from idea to implementation?
@@ -549,7 +565,7 @@
             </span>
           </button>
         </p>
-        <div class="ac-panel faq-panel">
+        <div class="ac-panel faq-panel" id="faq-panel-5" aria-labelledby="faq-heading">
           <p class="ac-text faq-text">
             Payment through credit and debit cards such as Visa, MasterCard,
             specialized electronic payment systems such as PayPal, as well as
@@ -566,11 +582,11 @@
   <div class="covers-section">
     <div class="container">
       <!-- Прихований заголовок для краулерів -->
-      <h2 class="cover-section-title visually-hidden">Covers</h2>
+      <h2 class="cover-section-title visually-hidden" id="covers-heading">Covers</h2>
     </div>
 
     <!-- Основний блок секції -->
-    <ul class="marquee">
+    <ul class="marquee" aria-labelledby="covers-heading">
       <!-- Перша лінія прокрутки -->
       <li>
         <ul class="marquee-list">
@@ -579,12 +595,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_1_2x-CdOI3uQ-.webp 2x, /stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp"
                 alt="Project 1"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -593,12 +611,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_10_2x-Cwq36WkV.webp 2x, /stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp"
                 alt="Project 10"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -607,12 +627,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_6_2x-24GuPUZG.webp 2x, /stackers-js-project/assets/projects_6_1x-fmcOa7ok.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_6_1x-fmcOa7ok.webp"
                 alt="Project 6"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -621,12 +643,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_8_2x-DYYJ7frV.webp 2x, /stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp"
                 alt="Project 8"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -635,12 +659,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_7_2x-Cc3OA0AB.webp 2x, /stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp"
                 alt="Project 7"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -649,12 +675,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_1_2x-CdOI3uQ-.webp 2x, /stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp"
                 alt="Project 1"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -663,12 +691,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_10_2x-Cwq36WkV.webp 2x, /stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp"
                 alt="Project 10"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -677,12 +707,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_6_2x-24GuPUZG.webp 2x, /stackers-js-project/assets/projects_6_1x-fmcOa7ok.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_6_1x-fmcOa7ok.webp"
                 alt="Project 6"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -691,12 +723,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_8_2x-DYYJ7frV.webp 2x, /stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp"
                 alt="Project 8"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -705,12 +739,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_7_2x-Cc3OA0AB.webp 2x, /stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp"
                 alt="Project 7"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -725,12 +761,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_10_2x-Cwq36WkV.webp 2x, /stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp"
                 alt="Project 10"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -739,12 +777,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_1_2x-CdOI3uQ-.webp 2x, /stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp"
                 alt="Project 1"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -753,12 +793,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_2_2x-Cn0zbQ3y.webp 2x, /stackers-js-project/assets/projects_2_1x-XMUKMhL_.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_2_1x-XMUKMhL_.webp"
                 alt="Project 2"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -767,12 +809,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_3_2x-Bk_iu3yN.webp 2x, /stackers-js-project/assets/projects_3_1x-CvNCtEDW.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_3_1x-CvNCtEDW.webp"
                 alt="Project 3"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -781,12 +825,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_4_2x-B3-2CVxJ.webp 2x, /stackers-js-project/assets/projects_4_1x-8xL3kctj.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_4_1x-8xL3kctj.webp"
                 alt="Project 4"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -795,12 +841,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_10_2x-Cwq36WkV.webp 2x, /stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp"
                 alt="Project 10"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -809,12 +857,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_1_2x-CdOI3uQ-.webp 2x, /stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp"
                 alt="Project 1"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -823,12 +873,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_2_2x-Cn0zbQ3y.webp 2x, /stackers-js-project/assets/projects_2_1x-XMUKMhL_.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_2_1x-XMUKMhL_.webp"
                 alt="Project 2"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -837,12 +889,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_3_2x-Bk_iu3yN.webp 2x, /stackers-js-project/assets/projects_3_1x-CvNCtEDW.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_3_1x-CvNCtEDW.webp"
                 alt="Project 3"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -851,12 +905,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_4_2x-B3-2CVxJ.webp 2x, /stackers-js-project/assets/projects_4_1x-8xL3kctj.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_4_1x-8xL3kctj.webp"
                 alt="Project 4"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -871,12 +927,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_5_2x-sAV9tDJO.webp 2x, /stackers-js-project/assets/projects_5_1x-DMckH_C5.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_5_1x-DMckH_C5.webp"
                 alt="Project 5"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -885,12 +943,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_9_2x-BjGYTY63.webp 2x, /stackers-js-project/assets/projects_9_1x-ogn-NQE_.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_9_1x-ogn-NQE_.webp"
                 alt="Project 9"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -899,12 +959,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_3_2x-Bk_iu3yN.webp 2x, /stackers-js-project/assets/projects_3_1x-CvNCtEDW.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_3_1x-CvNCtEDW.webp"
                 alt="Project 3"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -913,12 +975,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_7_2x-Cc3OA0AB.webp 2x, /stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp"
                 alt="Project 7"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -927,12 +991,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_8_2x-DYYJ7frV.webp 2x, /stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp"
                 alt="Project 8"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -941,12 +1007,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_5_2x-sAV9tDJO.webp 2x, /stackers-js-project/assets/projects_5_1x-DMckH_C5.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_5_1x-DMckH_C5.webp"
                 alt="Project 5"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -955,12 +1023,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_9_2x-BjGYTY63.webp 2x, /stackers-js-project/assets/projects_9_1x-ogn-NQE_.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_9_1x-ogn-NQE_.webp"
                 alt="Project 9"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -969,12 +1039,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_3_2x-Bk_iu3yN.webp 2x, /stackers-js-project/assets/projects_3_1x-CvNCtEDW.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_3_1x-CvNCtEDW.webp"
                 alt="Project 3"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -983,12 +1055,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_7_2x-Cc3OA0AB.webp 2x, /stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp"
                 alt="Project 7"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -997,12 +1071,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_8_2x-DYYJ7frV.webp 2x, /stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp"
                 alt="Project 8"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1017,12 +1093,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_4_2x-B3-2CVxJ.webp 2x, /stackers-js-project/assets/projects_4_1x-8xL3kctj.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_4_1x-8xL3kctj.webp"
                 alt="Project 4"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1031,12 +1109,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_7_2x-Cc3OA0AB.webp 2x, /stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp"
                 alt="Project 7"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1045,12 +1125,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_8_2x-DYYJ7frV.webp 2x, /stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp"
                 alt="Project 8"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1059,12 +1141,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_10_2x-Cwq36WkV.webp 2x, /stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp"
                 alt="Project 10"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1073,12 +1157,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_4_2x-B3-2CVxJ.webp 2x, /stackers-js-project/assets/projects_4_1x-8xL3kctj.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_4_1x-8xL3kctj.webp"
                 alt="Project 4"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1087,12 +1173,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_7_2x-Cc3OA0AB.webp 2x, /stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_7_1x-IDsUbTWJ.webp"
                 alt="Project 7"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1101,12 +1189,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_8_2x-DYYJ7frV.webp 2x, /stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_8_1x-Hgi5WGSP.webp"
                 alt="Project 8"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1115,12 +1205,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_10_2x-Cwq36WkV.webp 2x, /stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_10_1x-r1kLjU-J.webp"
                 alt="Project 10"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1135,12 +1227,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_9_2x-BjGYTY63.webp 2x, /stackers-js-project/assets/projects_9_1x-ogn-NQE_.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_9_1x-ogn-NQE_.webp"
                 alt="Project 9"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1149,12 +1243,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_1_2x-CdOI3uQ-.webp 2x, /stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp"
                 alt="Project 1"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1163,12 +1259,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_2_2x-Cn0zbQ3y.webp 2x, /stackers-js-project/assets/projects_2_1x-XMUKMhL_.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_2_1x-XMUKMhL_.webp"
                 alt="Project 2"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1177,12 +1275,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_9_2x-BjGYTY63.webp 2x, /stackers-js-project/assets/projects_9_1x-ogn-NQE_.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_9_1x-ogn-NQE_.webp"
                 alt="Project 9"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1191,12 +1291,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_1_2x-CdOI3uQ-.webp 2x, /stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_1_1x-rjmzGNJC.webp"
                 alt="Project 1"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1205,12 +1307,14 @@
               <source
                 srcset="/stackers-js-project/assets/projects_2_2x-Cn0zbQ3y.webp 2x, /stackers-js-project/assets/projects_2_1x-XMUKMhL_.webp 1x"
                 media="(min-resolution: 192dpi)"
+                type="image/webp"
               />
               <img
                 src="/stackers-js-project/assets/projects_2_1x-XMUKMhL_.webp"
                 alt="Project 2"
                 loading="lazy"
                 decoding="async"
+                aria-hidden="true"
               />
             </picture>
           </li>
@@ -1225,15 +1329,16 @@
   <div class="container">
     <h2 class="reviews-title">Reviews</h2>
     <div class="reviews-slider swiper">
-      <div class="reviews-error visually-hidden">
+      <div class="reviews-error visually-hidden" role="alert">
         <p class="reviews-error-text">Not found</p>
       </div>
-      <ul class="reviews-list swiper-wrapper"></ul>
+      <ul class="reviews-list swiper-wrapper" role="list"></ul>
       <div class="reviews-nav">
         <button
           class="reviews-button-prev"
           type="button"
           aria-label="Previous review"
+          aria-controls="reviews-list"
         >
           <svg class="icon-arrow-left" width="52" height="52">
             <use href="/stackers-js-project/assets/sprite-Dt218--k.svg#icon-arrow-left"></use>
@@ -1243,6 +1348,7 @@
           class="reviews-button-next"
           type="button"
           aria-label="Next review"
+          aria-controls="reviews-list"
         >
           <svg class="icon-arrow-right" width="52" height="52">
             <use href="/stackers-js-project/assets/sprite-Dt218--k.svg#icon-arrow-right"></use>
@@ -1267,8 +1373,9 @@
         <h2 class="footer-head">Let’s <span class="red-text">work</span></h2>
       </div>
       <h2 class="footer-head">together</h2>
-      <form class="footer-form">
+      <form class="footer-form" aria-labelledby="footer-form-title">
         <div class="input-wrapper">
+          <label for="email" class="sr-only">Email address</label>
           <input
             class="footer-input"
             type="email"
@@ -1280,6 +1387,7 @@
           />
           <span class="validation-message"></span>
         </div>
+        <label for="comment" class="sr-only">Your comments</label>
         <input
           class="footer-input"
           type="text"
@@ -1288,22 +1396,28 @@
           placeholder="comments"
           required
         />
-        <button class="footer-btn" type="submit">Send</button>
+        <button class="footer-btn" type="submit" aria-label="Send form">
+          Send
+        </button>
       </form>
       <address class="footer-contacts">
         <a
           href="mailto:lloydjefferson@gmail.com"
           class="footer-contacts-address"
+          aria-label="Send email to lloydjefferson@gmail.com"
           >lloydjefferson@gmail.com</a
         >
-        <a href="tel:+3801111111111" class="footer-contacts-address"
+        <a
+          href="tel:+3801111111111"
+          class="footer-contacts-address"
+          aria-label="Call +380 11 1111 11 11"
           >+380 11 1111 11 11</a
         >
       </address>
     </div>
-    <div class="modal-window-backdrop">
+    <div class="modal-window-backdrop" role="dialog" aria-labelledby="modal-header" aria-describedby="modal-text">
       <div class="footer-modal-window">
-        <button class="footer-modal-close-btn" type="button">
+        <button class="footer-modal-close-btn" type="button" aria-label="Close modal">
           <svg class="footer-modal-close" width="22" height="22">
             <use href="/stackers-js-project/assets/sprite-Dt218--k.svg#icon-close-btn"></use>
           </svg>
@@ -1322,34 +1436,34 @@
 
     <!-- Responsible person : Yurii Nabasoff -->
     <div class="mobile-menu" data-menu>
-  <button class="mobile-menu-close-btn" data-menu-close>
+  <button class="mobile-menu-close-btn" data-menu-close aria-label="Close menu">
     <svg class="mobile-menu-close-btn-icon">
       <use href="/stackers-js-project/assets/sprite-Dt218--k.svg#icon-close-btn"></use>
     </svg>
   </button>
   <div class="container mobile-menu-container">
-    <nav class="mobile-menu-nav">
-      <ul class="mobile-nav-list">
-        <li class="mobile-nav-item">
-          <a class="mobile-nav-link" href="#aboutMe">About me</a>
+    <nav class="mobile-menu-nav" aria-label="Mobile navigation">
+      <ul class="mobile-nav-list" role="list">
+        <li class="mobile-nav-item" role="listitem">
+          <a class="mobile-nav-link" href="#aboutMe" role="menuitem">About me</a>
         </li>
-        <li class="mobile-nav-item">
-          <a class="mobile-nav-link" href="#benefits">Benefits</a>
+        <li class="mobile-nav-item" role="listitem">
+          <a class="mobile-nav-link" href="#benefits" role="menuitem">Benefits</a>
         </li>
-        <li class="mobile-nav-item">
-          <a class="mobile-nav-link" href="#projects">Projects</a>
+        <li class="mobile-nav-item" role="listitem">
+          <a class="mobile-nav-link" href="#projects" role="menuitem">Projects</a>
         </li>
-        <li class="mobile-nav-item">
-          <a class="mobile-nav-link" href="#faq">FAQ</a>
+        <li class="mobile-nav-item" role="listitem">
+          <a class="mobile-nav-link" href="#faq" role="menuitem">FAQ</a>
         </li>
       </ul>
     </nav>
-    <button class="mobile-order-button" type="button">Order the project</button>
+    <button class="mobile-order-button" type="button" role="menuitem">Order the project</button>
   </div>
 </div>
 
     <!-- Responsible person : Ustym Bordun -->
-    <button class="scroll-to-top-btn" type="button" aria-label="Scroll page to top">
+    <button class="scroll-to-top-btn" type="button" aria-label="Scroll page to top" aria-controls="page-top">
   <svg class="scroll-to-top-btn-icon" width="34" height="34">
     <use href="/stackers-js-project/assets/sprite-Dt218--k.svg#icon-arrow-right"></use>
   </svg>

@@ -83,10 +83,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  headerOrderButton.addEventListener('click', function () {
-    const targetElement = document.getElementById('workTogether');
-    if (targetElement) {
-      smoothScrollTo(targetElement);
-    }
-  });
+  // headerOrderButton.addEventListener('click', function () {
+  //   const targetElement = document.getElementById('workTogether');
+  //   if (targetElement) {
+  //     smoothScrollTo(targetElement);
+  //   }
+  // });
 });

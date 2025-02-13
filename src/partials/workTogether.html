@@ -10,8 +10,9 @@
         <h2 class="footer-head">Let’s <span class="red-text">work</span></h2>
       </div>
       <h2 class="footer-head">together</h2>
-      <form class="footer-form">
+      <form class="footer-form" aria-labelledby="footer-form-title">
         <div class="input-wrapper">
+          <label for="email" class="sr-only">Email address</label>
           <input
             class="footer-input"
             type="email"
@@ -23,6 +24,7 @@
           />
           <span class="validation-message"></span>
         </div>
+        <label for="comment" class="sr-only">Your comments</label>
         <input
           class="footer-input"
           type="text"
@@ -31,22 +33,28 @@
           placeholder="comments"
           required
         />
-        <button class="footer-btn" type="submit">Send</button>
+        <button class="footer-btn" type="submit" aria-label="Send form">
+          Send
+        </button>
       </form>
       <address class="footer-contacts">
         <a
           href="mailto:lloydjefferson@gmail.com"
           class="footer-contacts-address"
+          aria-label="Send email to lloydjefferson@gmail.com"
           >lloydjefferson@gmail.com</a
         >
-        <a href="tel:+3801111111111" class="footer-contacts-address"
+        <a
+          href="tel:+3801111111111"
+          class="footer-contacts-address"
+          aria-label="Call +380 11 1111 11 11"
           >+380 11 1111 11 11</a
         >
       </address>
     </div>
-    <div class="modal-window-backdrop">
+    <div class="modal-window-backdrop" role="dialog" aria-labelledby="modal-header" aria-describedby="modal-text">
       <div class="footer-modal-window">
-        <button class="footer-modal-close-btn" type="button">
+        <button class="footer-modal-close-btn" type="button" aria-label="Close modal">
           <svg class="footer-modal-close" width="22" height="22">
             <use href="./img/sprite.svg#icon-close-btn"></use>
           </svg>

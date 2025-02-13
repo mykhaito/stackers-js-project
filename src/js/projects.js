@@ -17,17 +17,37 @@ const swiper = new Swiper(swiperContainer, {
     enabled: true,
     onlyInViewport: false,
   },
+  touchEventsTarget: 'wrapper',
+  simulateTouch: true,
 });
 
-document.addEventListener('DOMContentLoaded', () => {
-  const prevButton = document.querySelector('.projects-btn-prev');
-  const nextButton = document.querySelector('.projects-btn-next');
+// function updateButtonsState(swiper) {
+//   prevBtn.disabled = swiper.isBeginning;
+//   nextBtn.disabled = swiper.isEnd;
 
-  [prevButton, nextButton].forEach(button => {
-    button.addEventListener('mousedown', function () {
+//   prevBtn.classList.toggle('disabled', swiper.isBeginning);
+//   nextBtn.classList.toggle('disabled', swiper.isEnd);
+// }
+
+// document.addEventListener('keydown', evt => {
+//   if (evt.key === 'ArrowLeft' && !prevBtn.disabled) prevBtn.click();
+//   if (evt.key === 'ArrowRight' && !nextBtn.disabled) nextBtn.click();
+// });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const prevBtn = document.querySelector('.projects-btn-prev');
+  const nextBtn = document.querySelector('.projects-btn-next');
+
+  [prevBtn, nextBtn].forEach(btn => {
+    btn.addEventListener('mousedown', function () {
       setTimeout(() => {
         this.blur();
       }, 1000);
     });
   });
 });
+
+// button.addEventListener('touchstart', evt => {
+//   evt.preventDefault();
+//   index === 0 ? swiper.slidePrev() : swiper.slideNext();
+// });

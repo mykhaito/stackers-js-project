@@ -1,12 +1,12 @@
 <header class="page-header">
   <div class="container page-header-container">
-    <a class="logo header-logo" href="./index.html">
+    <a class="logo header-logo" href="./index.html" aria-label="Home">
       <img class="logo-img" src="./img/logo/logo.webp" alt="Logo" />
       <span class="logo-part">jefferson*</span>
     </a>
-    <nav class="dropdown">
-      <button class="dropbtn">Menu</button>
-      <ul class="dropdown-content">
+    <nav class="dropdown" aria-label="Main navigation">
+      <button class="dropbtn" aria-controls="dropdown-content">Menu</button>
+      <ul class="dropdown-content" id="dropdown-content" role="menu">
         <li class="mobile-nav-item">
           <a class="mobile-nav-link" href="#aboutMe">About me</a>
         </li>
@@ -21,18 +21,13 @@
         </li>
       </ul>
     </nav>
-
     <div class="header-btns-wrapper">
-      <button class="header-order-button" type="button">
-        Order the project
-      </button>
-
+    <a href="#workTogether" class="header-order-button" aria-label="Order the project">Order the project</a>
       <button class="theme-color-open-header-btn" type="button">
         Change theme
       </button>
     </div>
-
-    <button class="mobile-open-btn" type="button" data-menu-open>
+    <button class="mobile-open-btn" type="button" data-menu-open aria-label="Open menu">
       <svg class="mobile-btn-icon" width="28" height="28">
         <use href="./img/sprite.svg#icon-burger-menu"></use>
       </svg>

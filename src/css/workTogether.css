@@ -19,6 +19,9 @@
   background-size: auto 100%;
   background-repeat: no-repeat;
 }
+.page-footer.white-theme {
+  background-image: none;
+}
 .footer-section {
   display: flex;
   flex-direction: column;
@@ -30,14 +33,14 @@
   line-height: 1;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: var(--main-text-color);
+  /* color: var(--main-text-color); */
 }
 .footer-img {
   min-width: 44px;
   height: 44px;
 }
 .red-text {
-  color: var(--button-text-color);
+  color: var(--accent-color);
 }
 .footer-section-one {
   display: flex;
@@ -58,7 +61,7 @@
   color: var(--main-text-color);
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  border-bottom: 1px solid var(--color-transpent-02);
   padding-bottom: 20px;
   margin-bottom: 16px;
   overflow: hidden;
@@ -74,11 +77,11 @@
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
-  color: rgba(250, 250, 250, 0.6);
+  color: var(--color-transpent-06);
 }
 .footer-btn {
   border-radius: 100%;
-  background-color: var(--button-text-color);
+  background-color: var(--accent-color);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -94,15 +97,15 @@
 }
 .footer-btn:hover,
 .footer-btn:focus {
-  background-color: var(--button-text-color);
-  transform: scale(1.2);
+  background-color: var(--accent-color);
+  transform: scale(1.1);
 }
 .footer-contacts {
   display: flex;
   gap: 4px;
 }
 .footer-contacts-address {
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid var(--color-transpent-02);
   border-radius: 60px;
   padding: 10px 12px;
   width: 178px;
@@ -110,14 +113,14 @@
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
-  color: var(--main-text-color);
+  /* color: var(--main-text-color); */
   white-space: nowrap;
   outline: none;
   transition: background-color 250ms ease;
 }
 .footer-contacts-address:hover,
 .footer-contacts-address:focus {
-  background-color: var(--button-text-color);
+  background-color: var(--accent-color);
 }
 .modal-window-backdrop {
   position: fixed;
@@ -125,7 +128,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(15, 15, 16, 0.6);
+  background-color: var(--modal-back-drop-color);
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -146,7 +149,7 @@
   gap: 16px;
   flex-direction: column;
   text-align: center;
-  border: 1px solid rgba(250, 250, 250, 0.1);
+  border: 1px solid var(--color-transpent-02);
   border-radius: 20px;
   padding: 64px 32px;
   width: 343px;
@@ -164,7 +167,6 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-align: center;
-  color: var(--main-text-color);
 }
 .modal-text {
   font-weight: 500;
@@ -172,20 +174,33 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-align: center;
-  color: rgba(250, 250, 250, 0.6);
+  color: var(--color-transpent-06);
 }
 .footer-modal-close-btn {
   position: absolute;
+  z-index: 10;
   top: 20px;
   right: 20px;
-  background-color: transparent;
+
+  /* line-height: 0; */
+  outline: none;
+  border: none;
+  border-radius: 30%;
+
+  background-color: var(--black-color);
   padding: 0;
+  transition: transform 300ms ease;
+
   width: 22px;
   height: 22px;
+
   display: flex;
   align-items: center;
   justify-content: center;
-  border: none;
+}
+.footer-modal-close-btn:hover,
+.footer-modal-close-btn:focus {
+  transform: scale(1.1);
 }
 
 .footer-modal-close {
@@ -247,6 +262,9 @@ body.modal-open {
     background-size: auto 100%;
     background-repeat: no-repeat;
   }
+  .page-footer.white-theme {
+    background-image: none;
+  }
   .footer-section {
     margin-bottom: 121px;
     padding-left: 32px;
@@ -303,6 +321,9 @@ body.modal-open {
     background-position: 1040px 0;
     background-size: auto 100%;
     background-repeat: no-repeat;
+  }
+  .page-footer.white-theme {
+    background-image: none;
   }
   .footer-section {
     padding-left: 164px;

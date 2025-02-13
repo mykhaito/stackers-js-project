@@ -9,13 +9,11 @@ const accordionContainerEl = document.querySelector(
 const aboutMeAccordion = new Accordion(accordionContainerEl, {
   duration: 500, // час в мс відкриття-закриття ак (500 дефолтне)
   showMultiple: true, // чи можуть бути всі елементи ак відкритими
-  // onOpen: currEl => console.log('Open!', currEl), // функція на відкритті
   openOnInit: [0], // обирає який елемент рзкритий при завантаженні сторінки
 });
 
 const myStylesAcTriggerEls = document.querySelectorAll('.my-styles-ac-trigger');
-
-console.log(myStylesAcTriggerEls);
+// console.log(myStylesAcTriggerEls);
 
 myStylesAcTriggerEls.forEach(el => {
   el.addEventListener('mousedown', function () {

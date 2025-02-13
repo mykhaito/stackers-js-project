@@ -9,13 +9,13 @@
   width: 100vw;
   height: 100vh;
   background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
+  background-color: var(--black-color);
   background-size: cover;
   background-position: center;
-  align-items: center;
-  justify-content: center;
-  color: var(--main-text);
+  color: var(--white-color);
   overflow: hidden; /* Забороняємо скрол всередині меню */
   transform: translateX(100%);
+
   transition: transform 300ms ease, opacity 300ms ease, visibility 300ms ease;
   opacity: 0;
   visibility: hidden;
@@ -29,7 +29,7 @@
 
 .mobile-menu.is-open {
   transform: translateX(0);
-  display: flex;
+
   opacity: 1;
   visibility: visible;
 }
@@ -42,16 +42,27 @@ body.menu-open {
 }
 
 .mobile-menu-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 10px;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  overflow: auto;
 }
 
 .mobile-menu-nav {
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   text-align: center;
 }
 
@@ -92,20 +103,16 @@ body.menu-open {
   margin-bottom: 12px;
   transition: transform 300ms ease, color 300ms ease;
 }
-
 .mobile-nav-item:last-child {
   margin-bottom: 0;
 }
 
 .mobile-nav-item:hover .mobile-nav-link,
 .mobile-nav-item:focus-within .mobile-nav-link {
-  color: var(--button-text-color);
+  color: var(--accent-color);
   transform: scale(1.2);
 }
 
-.mobile-nav-item:active .mobile-nav-link {
-  color: var(--main-text-color);
-}
 .mobile-nav-item:hover,
 .mobile-nav-item:focus-within {
   transform: scale(1.2);
@@ -114,25 +121,37 @@ body.menu-open {
   transform: scale(1);
 }
 
+.theme-color-open-menu-btn,
 .mobile-order-button {
-  position: absolute;
-  bottom: 64px;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 14px 31px;
+  padding: 12px 29px;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: -0.02em;
-  color: var(--main-text);
+  /* color: var(--main-text-color); */
+  color: inherit;
+  background: var(--accent-color);
+
+  outline: none;
+  border: 2px solid transparent;
   border-radius: 60px;
-  background: var(--button-text-color);
-  border: none;
   min-width: 164px;
+
+  transition: transform 300ms ease-in-out, border-color 300ms ease-in-out;
 }
 
+.theme-color-open-menu-btn:hover,
+.theme-color-open-menu-btn:focus,
 .mobile-order-button:hover,
 .mobile-order-button:focus {
-  background-color: #e0373f;
+  border-color: var(--white-color);
+
+  transform: scale(0.95);
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
 }
 
 /* <!-- section /MENU responsible Yurii Nabasov --> */

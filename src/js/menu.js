@@ -11,8 +11,6 @@
       document.documentElement.scrollTop || document.body.scrollTop;
     document.body.style.top = `-${scrollPosition}px`;
     document.body.classList.add('menu-open');
-    modal.style.transition =
-      'transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease';
     modal.classList.add('is-open');
   });
 
@@ -20,7 +18,7 @@
     modal.classList.remove('is-open');
     document.body.classList.remove('menu-open');
     document.body.style.top = '';
-    window.scrollTo(0, scrollPosition);
+    window.scrollTo({ top: scrollPosition });
   });
 
   navLinks.forEach(link => {
@@ -63,7 +61,7 @@
       modal.classList.remove('is-open');
       document.body.classList.remove('menu-open');
       document.body.style.top = '';
-      window.scrollTo(0, scrollPosition);
+      window.scrollTo({ top: scrollPosition });
     }
   });
 })();

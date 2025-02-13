@@ -1,9 +1,49 @@
 :root {
-  --background-color: #1c1d20;
-  --cards-color: #242527;
-  --arrow-color: rgba(250, 250, 250, 0.4);
-  --button-text-color: #ed3b44;
-  --main-text-color: #fafafa;
+  /* Colors to use */
+
+  --background-color: var(--black-color);
+  --main-text-color: var(--white-color);
+  --cards-color: var(--grey-color);
+  --accent-color: var(--red-theme-color);
+  /* --button-text-color: var(--red-theme-color); */
+
+  /* Замінити всюди де є на --color-transpent-04 */
+  --arrow-color: var(--white-color-transpent-04);
+  /*  */
+
+  --color-transpent-02: var(--white-color-transpent-02);
+  --color-transpent-04: var(--white-color-transpent-04);
+  --color-transpent-06: var(--white-color-transpent-06);
+
+  --inverted-color-transpent-02: var(--black-color-transpent-02);
+  --inverted-color-transpent-04: var(--black-color-transpent-04);
+  --inverted-color-transpent-06: var(--black-color-transpent-06);
+
+  --modal-back-drop-color: rgba(15, 15, 16, 0.6);
+  /* /Colors to use */
+
+  /* For settings-theme-color */
+  --black-color: #1c1d20;
+  --white-color: #fafafa;
+
+  --grey-color: #242527;
+  --grey-non-parallel-color: #dbdad8;
+
+  --white-color-transpent-02: rgba(250, 250, 250, 0.2);
+  --black-color-transpent-02: rgba(15, 15, 16, 0.2);
+
+  --white-color-transpent-04: rgba(250, 250, 250, 0.4);
+  --black-color-transpent-04: rgba(15, 15, 16, 0.4);
+
+  --white-color-transpent-06: rgba(250, 250, 250, 0.6);
+  --black-color-transpent-06: rgba(15, 15, 16, 0.6);
+
+  --red-theme-color: #ed3b44;
+  --lime-theme-color: #c6e327;
+  --royal-blue-theme-color: #0041e8;
+  --crimson-orange-theme-color: #e6533c;
+  --deep-teal-theme-color: #2b4441;
+  --bright-orange-theme-color: #ff7f08;
 }
 
 html {

@@ -2,6 +2,8 @@
   margin-left: auto;
   margin-right: auto;
   padding: 0 16px;
+
+  color: var(--background-color);
 }
 .projects-title {
   font-weight: 600;
@@ -9,7 +11,7 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--arrow-color);
+  color: var(--color-transpent-04);
   margin-bottom: 32px;
 }
 .swiper-projects-js {
@@ -25,7 +27,7 @@
 }
 .projects-box {
   padding: 32px;
-  background-color: #ffffff;
+  background-color: var(--main-text-color);
   min-height: 417px;
   display: flex;
   flex-direction: column;
@@ -38,44 +40,42 @@
   gap: 6px;
 }
 .projects-item {
-  border: 1px solid rgba(28, 29, 32, 0.2);
+  border: 1px solid var(--inverted-color-transpent-02);
   border-radius: 60px;
   padding: 13px 18px;
   font-weight: 500;
   font-size: 16px;
   margin: 0;
   letter-spacing: -0.02em;
-  color: #1c1d20;
 }
 .projects-box-text {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.03em;
-  color: #1c1d20;
   margin-top: auto;
 }
 .projects-box-link {
   display: block;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 60px;
-  padding: 13px 32px;
+  padding: 9px 28px;
   width: 141px;
   height: 45px;
   margin-top: 32px;
   text-align: center;
-  background-color: var(--button-text-color);
+  background-color: var(--accent-color);
   font-weight: 500;
   letter-spacing: -0.02em;
   color: var(--main-text-color);
   cursor: pointer;
-  transition: background-color 250ms ease-in-out, transform 250ms ease-in-out;
+  transition: border-color 250ms ease-in-out, transform 250ms ease-in-out;
   outline: none;
 }
 .projects-box-link:hover,
 .projects-box-link:focus {
-  background-color: #e0373f;
-  transform: scale(1.05);
+  border-color: var(--white-color);
+  transform: scale(0.95);
 }
 .projects-photo {
   display: block;
@@ -92,10 +92,13 @@
 }
 .projects-btn-prev,
 .projects-btn-next {
-  background: var(--background-color);
-  fill: var(--background-color);
-  border: none;
+  background: var(--black-color);
+  fill: var(--black-color);
+  border-radius: 50%;
+  line-height: 0;
+
   outline: none;
+  border: none;
   padding: 0;
   cursor: pointer;
   transition: opacity 300ms ease, fill 300ms ease;
@@ -111,7 +114,7 @@
 .projects-btn-next:hover,
 .projects-btn-prev:focus,
 .projects-btn-next:focus {
-  fill: var(--button-text-color);
+  fill: var(--accent-color);
 }
 
 .swiper-button-left.disabled,
@@ -143,7 +146,7 @@
     line-height: 1;
   }
   .projects-box-link {
-    padding: 18px 50px;
+    padding: 14px 46px;
     width: 177px;
     height: 55px;
   }

@@ -4,12 +4,53 @@
   background-position: center;
   background-repeat: no-repeat;
   padding-top: 281px;
-    padding-bottom: 32px;
+  padding-bottom: 32px;
+
+  color: var(--white-color);
 }
 
 @media (min-resolution: 2dppx) {
   .hero-section {
     background-image: url('/img/hero_webp/hero_colors_1_2x.webp');
+  }
+}
+
+.hero-section.red {
+  background-image: url('/img/hero_webp/hero_colors_1_1x.webp');
+}
+.hero-section.lime {
+  background-image: url('/img/hero_webp/hero_colors_2_1x.webp');
+}
+.hero-section.royal-blue {
+  background-image: url('/img/hero_webp/hero_colors_3_1x.webp');
+}
+.hero-section.crimson-orange {
+  background-image: url('/img/hero_webp/hero_colors_4_1x.webp');
+}
+.hero-section.deep-teal {
+  background-image: url('/img/hero_webp/hero_colors_5_1x.webp');
+}
+.hero-section.bright-orange {
+  background-image: url('/img/hero_webp/hero_colors_6_1x.webp');
+}
+@media (min-resolution: 2dppx) {
+  .hero-section.red {
+    background-image: url('/img/hero_webp/hero_colors_1_2x.webp');
+  }
+  .hero-section.lime {
+    background-image: url('/img/hero_webp/hero_colors_2_2x.webp');
+  }
+  .hero-section.royal-blue {
+    background-image: url('/img/hero_webp/hero_colors_3_2x.webp');
+  }
+  .hero-section.crimson-orange {
+    background-image: url('/img/hero_webp/hero_colors_4_2x.webp');
+  }
+  .hero-section.deep-teal {
+    background-image: url('/img/hero_webp/hero_colors_5_2x.webp');
+  }
+  .hero-section.bright-orange {
+    background-image: url('/img/hero_webp/hero_colors_6_2x.webp');
   }
 }
 
@@ -32,7 +73,7 @@
 }
 .hero-social-links {
   width: 37px;
-  transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out, scale 300ms ease-in-out;
   outline: none;
 }
 .hero-social-email {
@@ -44,7 +85,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid var(--white-color-transpent-02);
   border-radius: 60px;
   height: 37px;
   font-weight: 500;
@@ -54,14 +95,14 @@
 
 .hero-social-links:hover,
 .hero-social-links:focus {
-  background-color: var(--button-text-color);
+  transform: scale(0.95);
+  background-color: var(--accent-color);
 }
 /*-----------------Tablet----------------*/
 
 @media only screen and (min-width: 768px) {
-  
   .hero-section {
-    padding-top: 300px ;
+    padding-top: 300px;
   }
   .hero-title {
     font-size: 90px;
@@ -86,10 +127,10 @@
 
 @media only screen and (min-width: 1440px) {
   .hero-container {
-   padding-left: 178px;
+    padding-left: 178px;
   }
   .hero-section {
-    padding-top: 300px ;
+    padding-top: 300px;
   }
   .hero-title {
     width: 1084px;

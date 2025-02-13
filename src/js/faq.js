@@ -3,15 +3,15 @@ import Accordion from 'accordion-js';
 const accordion = new Accordion('.faq-list', {
   duration: 500,
   showMultiple: false,
-  onOpen: currentElement => {
-    const acTrigger = currentElement.querySelector('.ac-trigger');
+});
 
-    acTrigger.focus();
+const myStylesAcTriggerEls = document.querySelectorAll('.faq-desc');
+// console.log(myStylesAcTriggerEls);
 
-    acTrigger.addEventListener('mousedown', function () {
-      setTimeout(() => {
-        this.blur();
-      }, 1000);
-    });
-  },
+myStylesAcTriggerEls.forEach(el => {
+  el.addEventListener('mousedown', function () {
+    setTimeout(() => {
+      this.blur();
+    }, 1000); // Прибирає фокус після кліку мишею
+  });
 });

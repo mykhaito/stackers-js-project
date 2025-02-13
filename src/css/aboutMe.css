@@ -1,25 +1,13 @@
-/* rgba(250, 250, 250, 0.2) */
-
-/* 
-  --background-color: #1C1D20;
-  --cards-color: #242527;
-  --arrow-color: rgba(250, 250, 250, 0.4);
-  --button-text-color: #ED3B44;
-  --main-text-color: #FAFAFA;
-*/
-
 .about-me-container {
   display: flex;
   flex-direction: column;
   row-gap: 32px;
 }
-
 @media only screen and (min-width: 768px) {
   .about-me-container {
     row-gap: 64px;
   }
 }
-
 @media only screen and (min-width: 1440px) {
   .about-me-container {
     row-gap: 96px;
@@ -50,10 +38,10 @@
 }
 
 .first-encounter-subsection-text > .accent-color {
-  color: var(--button-text-color);
+  color: var(--accent-color);
 }
 .first-encounter-subsection-text > .shaded-color {
-  color: var(--arrow-color);
+  color: var(--color-transpent-04);
 }
 
 .first-encounter-subsection-portrait {
@@ -127,7 +115,7 @@
   flex-grow: 1;
 
   padding-bottom: 20px;
-  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  border-bottom: 1px solid var(--color-transpent-02);
 }
 
 .my-styles-ac .my-styles-ac-trigger {
@@ -145,7 +133,7 @@
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: var(--arrow-color);
+  color: var(--color-transpent-04);
 
   position: relative;
 
@@ -160,7 +148,7 @@
   height: 2px;
   border-radius: 2px;
 
-  background-color: var(--arrow-color);
+  background-color: var(--color-transpent-04);
 
   transform: translateX(-100%);
   transition: transform 500ms ease-out;
@@ -178,19 +166,15 @@
   width: 36px;
   height: 36px;
 
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid var(--color-transpent-02);
   border-radius: 50%;
   fill: transparent;
-  background-color: transparent;
+  background-color: var(--black-color);
   transition: background-color 300ms ease, fill 300ms ease;
 }
 .about-me-ac-icon {
   width: 18px;
   height: 18px;
-
-  /* background-color: aqua; */
-  /* stroke: navy; */
-  /* fill: transparent; */
 
   transition: transform 500ms ease-in-out;
 }
@@ -198,30 +182,27 @@
 /* *Іконка коли акоорденон відкритий 
   is-active - клас який додається на акоорденон */
 .ac.is-active .about-me-ac-icon {
-  /* transform: translate(0px, 0px) rotate(180deg) skewX(0deg) skewY(0deg)
-    scaleX(1) scaleY(1); */
   transform: rotateX(180deg);
   /* transform: rotate(-180deg); */
-  /* transform: rotate(180deg); */
 }
 
 .about-me-ac-icon-wrapper:hover {
-  background-color: var(--button-text-color);
+  background-color: var(--accent-color);
 }
 .ac-trigger:focus .about-me-ac-icon-wrapper {
-  background-color: var(--button-text-color);
+  background-color: var(--accent-color);
 }
 
 .ac-trigger:focus .about-me-ac-icon-wrapper {
-  fill: var(--button-text-color);
+  fill: var(--accent-color);
 }
 
 .ac.is-active .ac-trigger:focus .about-me-ac-icon-wrapper {
-  background-color: var(--button-text-color);
+  background-color: var(--accent-color);
 }
 
 .ac.is-active .ac-trigger:focus .about-me-ac-icon-wrapper {
-  fill: var(--button-text-color);
+  fill: var(--accent-color);
 }
 
 .my-styles-ac-text {
@@ -371,7 +352,7 @@
   /* width: Ширину вираховує (через js так як ми задали в налаштуваннях свайперу)
   і проставляє бібліотека через вбудовані стилі в (px); */
 
-  border: 1px solid rgba(250, 250, 250, 0.2);
+  border: 1px solid var(--color-transpent-02);
   border-radius: 50%;
 
   font-weight: 500;
@@ -382,7 +363,7 @@
 }
 .about-me-swiper-slide.swiper-slide-active {
   /* .swiper-slide-active клас який додається на перший слайд в зоні видимості */
-  background-color: var(--button-text-color);
+  background-color: var(--accent-color);
   border-color: transparent;
 }
 
@@ -390,7 +371,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  fill: var(--background-color);
+  fill: var(--black-color);
   padding: 0;
   margin-left: auto;
   background-color: transparent;
@@ -401,8 +382,8 @@
 }
 .about-me-swiper-btn-next:hover,
 .about-me-swiper-btn-next:focus {
-  fill: var(--button-text-color);
-  outline-color: rgba(250, 250, 250, 0.2);
+  fill: var(--accent-color);
+  outline-color: var(--color-transpent-02);
 }
 
 @media only screen and (min-width: 768px) {

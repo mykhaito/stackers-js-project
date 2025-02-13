@@ -4,6 +4,7 @@
   | default @import url()
   |============================
 */
+/* Libraries styles */
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
@@ -15,6 +16,9 @@
 @import url('./base.css');
 @import url('./container.css');
 @import url('./animations.css');
+
+/* Theme-color change */
+@import url('./settings-for-theme-color.css');
 
 /* Sections style */
 @import url('./header.css');

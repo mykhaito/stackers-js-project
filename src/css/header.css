@@ -28,7 +28,7 @@
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
-  color: var(--main-text);
+  /* color: var(--white-color); */
 }
 
 .dropbtn {
@@ -41,7 +41,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--main-text);
+  color: inherit;
   padding: 10px;
   width: 60px;
   height: 39px;
@@ -51,12 +51,7 @@
 .dropbtn:hover,
 .dropbtn:focus {
   transform: scale(1.2);
-  color: var(--button-text-color);
-}
-
-.dropbtn:active {
-  transform: scale(1);
-  color: inherit;
+  color: var(--accent-color);
 }
 
 .page-header {
@@ -67,6 +62,8 @@
   z-index: 10;
   background-color: transparent;
   padding-top: 32px;
+
+  color: var(--white-color);
 }
 
 .mobile-open-btn {
@@ -74,7 +71,6 @@
   line-height: 0;
   background-color: transparent;
   padding: 0;
-  stroke: white;
   transition: transform 300ms ease, color 300ms ease;
 }
 
@@ -83,10 +79,7 @@
   transform: scale(1.2);
 }
 
-.mobile-btn-icon {
-  stroke: currentColor;
-}
-
+.theme-color-open-header-btn,
 .header-order-button {
   display: none;
 }
@@ -108,29 +101,45 @@
     display: none;
   }
 
+  .header-btns-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+  }
+
   .header-order-button {
     display: block;
-    width: 163px;
-    height: 55px;
+  }
+  .theme-color-open-header-btn.is-open {
+    display: block;
+  }
+  .header-order-button,
+  .theme-color-open-header-btn {
+    min-width: 163px;
+    min-height: 55px;
+
+    padding: 16px 22px;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: -0.02em;
     color: var(--main-text);
-    border-radius: 60px;
-    padding: 18px 24px;
-    background: var(--button-text-color);
-    border: none;
-    outline: none;
-    transition: transform 300ms ease;
-  }
+    /* color: inherit; */
+    background-color: var(--accent-color);
 
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: 60px;
+
+    transition: transform 300ms ease-in-out, border-color 300ms ease-in-out;
+  }
+  .theme-color-open-header-btn:hover,
+  .theme-color-open-header-btn:focus,
   .header-order-button:hover,
   .header-order-button:focus {
-    transform: scale(1.2);
-  }
-
-  .header-order-button:active {
-    transform: scale(1);
+    border-color: var(--white-color);
+    transform: scale(0.95);
   }
 }
 

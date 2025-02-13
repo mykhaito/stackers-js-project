@@ -1,0 +1,370 @@
+/* ======== modal-window-styles ======== */
+body.modal-for-theme-open {
+  overflow: hidden; /* Забороняємо скрол сторінки */
+  touch-action: none; /* Забороняємо скрол на мобільних пристроях */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100vh; /* Щоб запобігти будь-яким зміщенням */
+}
+
+.modal-for-theme-color {
+  position: fixed;
+  z-index: 9999;
+  inset: 0; /* top: 0; left: 0; bottom: 0; right: 0;*/
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--modal-back-drop-color);
+
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 300ms ease, visibility 300ms ease;
+}
+.modal-for-theme-color.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.theme-color-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 95%;
+}
+
+.theme-color-box {
+  min-width: 288px;
+  width: 95%;
+  height: 100%;
+
+  padding: 20px;
+  background-color: var(--background-color);
+  border: 1px solid var(--color-transpent-02);
+  border-radius: 20px;
+
+  overflow: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+}
+
+@media only screen and (min-width: 768px) {
+  .theme-color-container {
+    height: 90%;
+  }
+  .theme-color-box {
+    width: 85%;
+    padding: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .theme-color-container {
+    height: 85%;
+  }
+  .theme-color-box {
+    width: 80%;
+    padding: 40px 60px;
+  }
+}
+/* ======== /modal-window-styles ======== */
+
+/* --accent-color */
+/* ======== /theme-color-close-btn ======== */
+.theme-color-close-btn {
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  right: 10px;
+
+  line-height: 0;
+  outline: none;
+  border: 2px solid var(--accent-color);
+  border-radius: 30%;
+  cursor: pointer;
+  background-color: var(--black-color);
+  padding: 0;
+  transition: transform 300ms ease, color 300ms ease;
+}
+.theme-color-close-btn:hover,
+.theme-color-close-btn:focus {
+  transform: scale(1.1);
+}
+.theme-color-close-btn-icon {
+  width: 20px;
+  height: 20px;
+
+  /* stroke: var(--main-text-color); */
+}
+@media only screen and (min-width: 768px) {
+  .theme-color-close-btn {
+    top: 16px;
+    right: 16px;
+  }
+  .theme-color-close-btn-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .theme-color-close-btn {
+    top: 20px;
+    right: 40px;
+  }
+  .theme-color-close-btn-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+/* ======== /theme-color-close-btn ======== */
+
+/* ======== theme-color-box ======== */
+.theme-color-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: 0em;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title-accent-color {
+  color: var(--accent-color);
+}
+
+.choosing-theme-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 16px;
+
+  flex-grow: 1;
+}
+
+.main-color-theme-selector,
+.accent-color-theme-selector {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  border: 2px solid var(--main-text-color);
+  border-radius: 20px;
+
+  margin: 0;
+  padding: 15px 10px;
+}
+
+/* ======== theme-checkbox-wrapper ======== */
+
+.theme-checkbox-title {
+  font-weight: 500;
+  /* font-size: 16px; */
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  padding: 5px 20px;
+
+  border: 2px solid var(--accent-color);
+  border-radius: 12px;
+}
+
+.theme-checkbox-wrapper {
+  display: flex;
+  justify-content: center;
+
+  width: calc((100% - 10px) / 2);
+}
+
+.theme-checkbox-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+
+  font-weight: 500;
+  /* font-size: 16px; */
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+
+  text-align: center;
+  transition: color 250ms ease-in-out;
+}
+
+.theme-custom-checkbox {
+  display: block;
+  width: 20px;
+  height: 20px;
+
+  margin-top: 5px;
+
+  border: 2px solid var(--main-text-color);
+  border-radius: 30%;
+  background-color: transparent;
+
+  /* transition: border-color 250ms ease-in-out, background-color 250ms ease-in-out; */
+  transition: background-color 250ms ease-in-out;
+}
+
+.theme-checkbox:checked + .theme-checkbox-label > .theme-custom-checkbox {
+  background-color: var(--accent-color);
+}
+.theme-checkbox-wrapper:hover .theme-checkbox-label,
+.theme-checkbox:checked + .theme-checkbox-label {
+  color: var(--accent-color);
+}
+
+.theme-checkbox:checked + .theme-checkbox-label.red > .theme-custom-checkbox {
+  background-color: var(--red-theme-color);
+}
+.theme-checkbox-wrapper:hover .theme-checkbox-label.red,
+.theme-checkbox:checked + .theme-checkbox-label.red {
+  color: var(--red-theme-color);
+}
+
+.theme-checkbox:checked + .theme-checkbox-label.lime > .theme-custom-checkbox {
+  background-color: var(--lime-theme-color);
+}
+.theme-checkbox-wrapper:hover .theme-checkbox-label.lime,
+.theme-checkbox:checked + .theme-checkbox-label.lime {
+  color: var(--lime-theme-color);
+}
+
+.theme-checkbox:checked
+  + .theme-checkbox-label.royal-blue
+  > .theme-custom-checkbox {
+  background-color: var(--royal-blue-theme-color);
+}
+.theme-checkbox-wrapper:hover .theme-checkbox-label.royal-blue,
+.theme-checkbox:checked + .theme-checkbox-label.royal-blue {
+  color: var(--royal-blue-theme-color);
+}
+
+.theme-checkbox:checked
+  + .theme-checkbox-label.crimson-orange
+  > .theme-custom-checkbox {
+  background-color: var(--crimson-orange-theme-color);
+}
+.theme-checkbox-wrapper:hover .theme-checkbox-label.crimson-orange,
+.theme-checkbox:checked + .theme-checkbox-label.crimson-orange {
+  color: var(--crimson-orange-theme-color);
+}
+
+.theme-checkbox:checked
+  + .theme-checkbox-label.deep-teal
+  > .theme-custom-checkbox {
+  background-color: var(--deep-teal-theme-color);
+}
+.theme-checkbox-wrapper:hover .theme-checkbox-label.deep-teal,
+.theme-checkbox:checked + .theme-checkbox-label.deep-teal {
+  color: var(--deep-teal-theme-color);
+}
+
+.theme-checkbox:checked
+  + .theme-checkbox-label.bright-orange
+  > .theme-custom-checkbox {
+  background-color: var(--bright-orange-theme-color);
+}
+.theme-checkbox-wrapper:hover .theme-checkbox-label.bright-orange,
+.theme-checkbox:checked + .theme-checkbox-label.bright-orange {
+  color: var(--bright-orange-theme-color);
+}
+
+.theme-color-set-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 150px;
+  margin-right: auto;
+  margin-left: auto;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  padding: 5px 20px;
+
+  color: var(--main-text-color);
+  background-color: var(--background-color);
+  transition: color 400ms ease-in-out, background-color 400ms ease-in-out;
+
+  outline: none;
+  border: 4px solid var(--accent-color);
+  border-radius: 12px;
+}
+
+.theme-color-set-btn:hover,
+.theme-color-set-btn:focus {
+  color: var(--background-color);
+  background-color: var(--main-text-color);
+}
+
+@media only screen and (min-width: 768px) {
+  .main-color-theme-selector,
+  .accent-color-theme-selector {
+    gap: 16px;
+    border-radius: 30px;
+    padding: 20px 20px;
+  }
+
+  .theme-checkbox-wrapper {
+    width: calc((100% - 16px) / 2);
+  }
+
+  .theme-color-title {
+    font-size: 38px;
+    line-height: 1.05263;
+
+    margin-bottom: 32px;
+  }
+
+  .theme-checkbox-title {
+    font-size: 24px;
+  }
+
+  .theme-checkbox-label {
+    font-size: 22px;
+    line-height: 1.25;
+  }
+
+  .theme-custom-checkbox {
+    width: 24px;
+    height: 24px;
+
+    margin-top: 8px;
+
+    border: 2px solid var(--main-text-color);
+    border-radius: 35%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .main-color-theme-selector,
+  .accent-color-theme-selector {
+    gap: 22px;
+    padding: 24px 36px;
+  }
+  .main-color-theme-selector .theme-checkbox-wrapper {
+    width: calc((100% - 22px) / 2);
+  }
+  .accent-color-theme-selector .theme-checkbox-wrapper {
+    width: calc((100% - 44px) / 3);
+  }
+}
+
+/* ======== /theme-color-box ======== */

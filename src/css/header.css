@@ -112,6 +112,9 @@
 
   .header-order-button {
     display: block;
+    text-align: center;
+    vertical-align: middle;
+
   }
   .theme-color-open-header-btn.is-open {
     display: block;
